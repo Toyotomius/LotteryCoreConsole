@@ -50,3 +50,25 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+*.vs*/*
+*bin/*
+*obj/*
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+*.[Cc]ache
+!?*.[Cc]ache/
+/OldCode/OldCode.txt
+/Properties/PublishProfiles
+/Old Main 4-25-2019.txt
+*.ruleset
+

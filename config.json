@@ -1,0 +1,9 @@
+{
+  // For files: If not located in program directory, escape the slashes EG: C:\\MyFileLocation\\File.json
+  // Root object must be the same as file name.
+  // Check example.json for correct format for the lottery data file.
+  //TODO: Set up the ability to put the website in the config file for auto-scraping numbers.
+  //TODO: Set up the ability to put the draw-time with the websites for auto-scraping.
+
+  "LotteryMasterFiles": [ "Break.json", "Lotto649.json", "Example.json", "Lotto649During.json" ]
+}
