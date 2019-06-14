@@ -1,5 +1,4 @@
 ﻿using LotteryCoreConsole.FileManagement;
-using LotteryCoreConsole.GetSetObjects;
 using LotteryCoreConsole.Interfaces;
 using LotteryCoreConsole.PairsCode;
 using LotteryCoreConsole.Settings;
@@ -25,11 +24,6 @@ namespace LotteryCoreConsole
             return new Logging();
         }
 
-        public static ILottoData CreateLottoData()
-        {
-            return new LottoData();
-        }
-
         public static IMakeLottoList CreateLottoList()
         {
             return new MakeLottoList();
@@ -48,11 +42,6 @@ namespace LotteryCoreConsole
         public static ILottoPairsJsonSerial CreatePairsJsonSerial()
         {
             return new LottoPairsJsonSerial(CreateJsonSerializer(), CreatePairsFileOut());
-        }
-
-        public static IPairs CreatePairsList()
-        {
-            return new Pairs();
         }
 
         public static IParaPairs CreateParaPairs()
@@ -85,20 +74,10 @@ namespace LotteryCoreConsole
             return new LottoSinglesJsonSerial(CreateJsonSerializer(), CreateSinglesFileOut());
         }
 
-        public static ISingles CreateSinglesList()
-        {
-            return new Singles();
-        }
-
         public static IBeginLottoCalculations CreateStartLottoLists()
         {
             return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
                                                 CreateParaPairs(), CreateParaTriplets());
-        }
-
-        public static ITriplets CreateTripletList()
-        {
-            return new Triplets();
         }
 
         public static ILottoTripsFileOut CreateTripsFileOut()
