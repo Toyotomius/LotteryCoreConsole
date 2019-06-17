@@ -4,6 +4,6 @@ namespace LotteryCoreConsole.Interfaces
 {
     public interface IListJsonSerializer
     {
-        string JSerialize<T>(List<T> lottoList);
+        string JSerialize<T>(IList<T> lottoList);
     }
 }

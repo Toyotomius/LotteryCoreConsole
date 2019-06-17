@@ -20,10 +20,10 @@ namespace LotteryCoreConsole.SinglesCode
             Console.WriteLine(
                 $"{DateTimeOffset.Parse(DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")).ToString("MM/dd/yyyy hh:mm:ss.fff tt")}" +
                 $" : {lotteryName} Singles Started");
-            List<Singles> singlesList = (from n in parsedLotto.AllNumbers.SelectMany(x => x)
+            List<ISingles> singlesList = (from n in parsedLotto.AllNumbers.SelectMany(x => x)
                                          group n by n into g
                                          orderby g.Count() descending
-                                         select new Singles { First = g.Key, Frequency = g.Count() }).ToList();
+                                         select new Singles { First = g.Key, Frequency = g.Count() }).Cast<ISingles>().ToList();
 
             _singlesJsonSerial.SinglesSerializeAsync(lotteryName, singlesList);
         }
