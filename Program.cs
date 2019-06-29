@@ -1,4 +1,5 @@
 ﻿using LotteryCoreConsole.Interfaces;
+using LotteryCoreConsole.WebsiteScraping;
 
 namespace LotteryCoreConsole
 {
@@ -13,8 +14,8 @@ namespace LotteryCoreConsole
             //{
             //}
 
-            //WebsiteScraping ws = new WebsiteScraping();
-            //ws.Scrape();
+            IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
+            await websiteScraping.ScrapeAsync();
 
             //Console.ReadKey();
 
