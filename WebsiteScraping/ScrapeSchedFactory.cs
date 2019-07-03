@@ -1,4 +1,5 @@
 ﻿using System;
+
 using LotteryCoreConsole.WebsiteScraping.Interfaces;
 
 namespace LotteryCoreConsole.WebsiteScraping

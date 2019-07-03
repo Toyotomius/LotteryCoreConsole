@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.Interfaces;
+
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Settings
@@ -10,9 +12,8 @@ namespace LotteryCoreConsole.Settings
     public class SetSettings : ISetSettings
     {
         private readonly ILogging _logger;
-        private List<JObject> _lotteryJObject;
-
         private readonly ISettings _settings;
+        private List<JObject> _lotteryJObject;
 
         public SetSettings(ISettings settings, ILogging logger)
         {
@@ -22,9 +23,9 @@ namespace LotteryCoreConsole.Settings
 
         private List<string> LotteryFile { get; set; }
 
-        public async Task<(List<string> LotteryFile, List<JObject> LotteryJObject)> ApplySettingsAsync()
+        public async Task<(List<string> LotteryFile, List<JObject> LotteryJObject, bool scrapeWebsites)> ApplySettingsAsync()
         {
-            Task<JObject> settingsFromFileTask = _settings.GetSettings();
+            Task<JObject> settingsFromFileTask = _settings.ReadSettings();
             JObject settingsFromFile = await settingsFromFileTask;
 
             //TODO: Check to see if a file has been added to.Ignore it if it hasn't been.
@@ -32,6 +33,10 @@ namespace LotteryCoreConsole.Settings
 
             LotteryFile = new List<string>();
             _lotteryJObject = new List<JObject>();
+
+            // Checks for True/False for scraping websites on first run. If true, sets up Quartz timers to scrape new
+            // winning numbers automatically.
+            bool scrapeWebsites = settingsFromFile["ScrapeLotteryWebsites"].ToObject<bool>();
 
             // Takes each item from the array of json lottery files and adds it to a list
             foreach (JToken itm in settingsFromFile["LotteryMasterFiles"])
@@ -59,7 +64,7 @@ namespace LotteryCoreConsole.Settings
 
             // Reverses list to compensate for descending for loop
             _lotteryJObject.Reverse();
-            return (LotteryFile, _lotteryJObject);
+            return (LotteryFile, _lotteryJObject, scrapeWebsites);
         }
     }
 }

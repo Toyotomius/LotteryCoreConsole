@@ -5,7 +5,9 @@ using System.Reflection;
 using System.Threading.Tasks;
 
 using HtmlAgilityPack;
+
 using LotteryCoreConsole.WebsiteScraping.Interfaces;
+
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 

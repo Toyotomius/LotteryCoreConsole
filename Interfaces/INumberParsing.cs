@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using LotteryCoreConsole.GetSetObjects;
+
 namespace LotteryCoreConsole.Interfaces
 {
     public interface INumberParsing
@@ -8,6 +10,6 @@ namespace LotteryCoreConsole.Interfaces
 
         IEnumerable<int> DistinctNumbers { get; set; } // Grabs just the distinct numbers in the list.
 
-        (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers) ParseLottoList(List<ILottoData> lotto);
+        (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers) ParseLottoList(List<LottoData> lotto);
     }
 }

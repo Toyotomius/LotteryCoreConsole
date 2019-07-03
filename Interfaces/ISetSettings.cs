@@ -7,6 +7,6 @@ namespace LotteryCoreConsole.Interfaces
 {
     public interface ISetSettings
     {
-        Task<(List<string> LotteryFile, List<JObject> LotteryJObject)> ApplySettingsAsync();
+        Task<(List<string> LotteryFile, List<JObject> LotteryJObject, bool scrapeWebsites)> ApplySettingsAsync();
     }
 }

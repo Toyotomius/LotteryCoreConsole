@@ -9,14 +9,14 @@ namespace LotteryCoreConsole
 {
     public static class Factory
     {
-        private static IFileOut CreateFileOut()
+        internal static IBeginLottoCalculations CreateBeginLottoCalculations()
         {
-            return new FileOut();
+            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(), CreateParaPairs(), CreateParaTriplets());
         }
 
-        private static IListJsonSerializer CreateJsonSerializer()
+        internal static IGetSettings CreateGetSettings()
         {
-            return new ListJsonSerializer();
+            return new GetSettings(SetNewSettings());
         }
 
         internal static ILogging CreateLogger()
@@ -27,6 +27,27 @@ namespace LotteryCoreConsole
         internal static IMakeLottoList CreateLottoList()
         {
             return new MakeLottoList();
+        }
+
+        internal static IBeginLottoCalculations CreateStartLottoLists()
+        {
+            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
+                                                CreateParaPairs(), CreateParaTriplets());
+        }
+
+        internal static ISetSettings SetNewSettings()
+        {
+            return new SetSettings(CreateSettings(), CreateLogger());
+        }
+
+        private static IFileOut CreateFileOut()
+        {
+            return new FileOut();
+        }
+
+        private static IListJsonSerializer CreateJsonSerializer()
+        {
+            return new ListJsonSerializer();
         }
 
         private static INumberParsing CreateNumberParser()
@@ -74,12 +95,6 @@ namespace LotteryCoreConsole
             return new LottoSinglesJsonSerial(CreateJsonSerializer(), CreateSinglesFileOut());
         }
 
-        internal static IBeginLottoCalculations CreateStartLottoLists()
-        {
-            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
-                                                CreateParaPairs(), CreateParaTriplets());
-        }
-
         private static ILottoTripsFileOut CreateTripsFileOut()
         {
             return new LottoTripsFileOut(CreateFileOut());
@@ -88,11 +103,6 @@ namespace LotteryCoreConsole
         private static ILottoTripsJsonSerial CreateTripsJsonSerial()
         {
             return new LottoTripsJsonSerial(CreateJsonSerializer(), CreateTripsFileOut());
-        }
-
-        internal static ISetSettings SetNewSettings()
-        {
-            return new SetSettings(CreateSettings(), CreateLogger());
         }
     }
 }

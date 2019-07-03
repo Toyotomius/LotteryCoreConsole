@@ -6,6 +6,6 @@ namespace LotteryCoreConsole.Interfaces
 {
     public interface ISettings
     {
-        Task<JObject> GetSettings();
+        Task<JObject> ReadSettings();
     }
 }

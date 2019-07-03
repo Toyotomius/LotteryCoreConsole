@@ -1,7 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.Interfaces;
+
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Settings
@@ -34,7 +36,7 @@ namespace LotteryCoreConsole.Settings
         }
 
         // Pulls settings from the config file.
-        public async Task<JObject> GetSettings()
+        public async Task<JObject> ReadSettings()
         {
             ConfigContents = File.ReadAllText("config.json");
             Task<JObject> task = Task.FromResult(JObject.Parse(_configContents));
