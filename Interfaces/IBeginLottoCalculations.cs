@@ -1,9 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
+using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Interfaces
 {
     public interface IBeginLottoCalculations
     {
-        Task StartLottoListsAsync();
+        void LottoChain((List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo);
     }
 }

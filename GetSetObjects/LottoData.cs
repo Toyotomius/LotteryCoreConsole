@@ -1,8 +1,6 @@
-﻿using LotteryCoreConsole.Interfaces;
-
-namespace LotteryCoreConsole.GetSetObjects
+﻿namespace LotteryCoreConsole.GetSetObjects
 {
-    public class LottoData : ILottoData
+    public class LottoData
     {
         public string Date { get; set; }
 

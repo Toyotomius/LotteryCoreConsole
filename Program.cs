@@ -1,4 +1,9 @@
-﻿using LotteryCoreConsole.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+
+using LotteryCoreConsole.Interfaces;
+
+using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole
 {
@@ -6,6 +11,13 @@ namespace LotteryCoreConsole
     {
         private static async System.Threading.Tasks.Task Main()
         {
+            IGetSettings set = Factory.CreateGetSettings();
+            (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) = await set.RetrieveSettings();
+
+            if (scrapeWebsites)
+            {
+                Console.WriteLine("ScrapeWebsites = True");
+            }
             // Task scheduler chain for specific lotteries.
             //SchdTask schd = new SchdTask();
             //schd.Schedule();
@@ -13,14 +25,19 @@ namespace LotteryCoreConsole
             //{
             //}
 
-            //WebsiteScraping ws = new WebsiteScraping();
-            //ws.Scrape();
+            //IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
+            //await websiteScraping.ScrapeAsync();
 
             //Console.ReadKey();
 
+            (List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo = (lotteryFile, lotteryJObject);
+            // TODO: Check to see if a file has been added to.Ignore it if it hasn't been.
+            // TODO: Clean up logfile at various points.
+
+            IBeginLottoCalculations beginCalc = Factory.CreateBeginLottoCalculations();
+            beginCalc.LottoChain(lotteryInfo);
+
             // First time run separated out for easier future expansion.
-            IBeginLottoCalculations beginLottoCalculations = Factory.CreateStartLottoLists();
-            await beginLottoCalculations.StartLottoListsAsync();
         }
     }
 }

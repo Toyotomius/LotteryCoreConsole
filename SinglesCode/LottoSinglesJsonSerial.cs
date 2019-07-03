@@ -17,7 +17,7 @@ namespace LotteryCoreConsole.SinglesCode
             _singlesFileOut = singlesFileOut;
         }
 
-        public async Task SinglesSerializeAsync(string lotteryName, List<GetSetObjects.Singles> singlesList)
+        public async Task SinglesSerializeAsync(string lotteryName, IList<ISingles> singlesList)
         {
             string singlesJson = _serializer.JSerialize(singlesList);
 

@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-
-using LotteryCoreConsole.GetSetObjects;
 using LotteryCoreConsole.Interfaces;
 
 namespace LotteryCoreConsole.PairsCode
@@ -17,7 +15,7 @@ namespace LotteryCoreConsole.PairsCode
             _pairsFileOut = pairsFileOut;
         }
 
-        public async Task PairsSerializeAsync(string lotteryName, List<Pairs> pairsList)
+        public async Task PairsSerializeAsync(string lotteryName, IList<IPairs> pairsList)
         {
             string pairsJson = _serializer.JSerialize(pairsList);
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using LotteryCoreConsole.GetSetObjects;
 using LotteryCoreConsole.Interfaces;
 
@@ -20,14 +21,14 @@ namespace LotteryCoreConsole.TripletsCode
             Console.WriteLine(
                 $"{DateTimeOffset.Parse(DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")).ToString("MM/dd/yyyy hh:mm:ss.fff tt")}" +
                 $" : {lotteryName} Triplets Started");
-            List<Triplets> trips =
+            List<ITriplets> trips =
                 (from firstNum in parsedLotto.DistinctNumbers
                  from secondNum in parsedLotto.DistinctNumbers
                  from thirdNum in parsedLotto.DistinctNumbers
                  where firstNum.CompareTo(secondNum) < 0 && firstNum.CompareTo(thirdNum) < 0 && secondNum.CompareTo(thirdNum) < 0
-                 select new Triplets { First = firstNum, Second = secondNum, Third = thirdNum }).ToList();
+                 select new Triplets { First = firstNum, Second = secondNum, Third = thirdNum }).Cast<ITriplets>().ToList();
 
-            List<Triplets> tripletList =
+            IList<ITriplets> tripletList =
                 (from l in parsedLotto.AllNumbers
                  from p in trips
                  where l.Contains(p.First) && l.Contains(p.Second) && l.Contains(p.Third)
@@ -39,7 +40,7 @@ namespace LotteryCoreConsole.TripletsCode
                      Second = g.Key.Second,
                      Third = g.Key.Third,
                      Frequency = g.Count()
-                 }).ToList();
+                 }).Cast<ITriplets>().ToList();
 
             _tripsJsonSerial.TripsSerializeAsync(lotteryName, tripletList);
         }

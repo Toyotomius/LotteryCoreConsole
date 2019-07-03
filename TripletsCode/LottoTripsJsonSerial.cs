@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-
-using LotteryCoreConsole.GetSetObjects;
 using LotteryCoreConsole.Interfaces;
 
 namespace LotteryCoreConsole.TripletsCode
@@ -18,7 +16,7 @@ namespace LotteryCoreConsole.TripletsCode
             _tripsFileOut = tripsFileOut;
         }
 
-        public async Task TripsSerializeAsync(string lotteryName, List<Triplets> tripletList)
+        public async Task TripsSerializeAsync(string lotteryName, IList<ITriplets> tripletList)
         {
             string tripsJson = _serializer.JSerialize(tripletList);
 

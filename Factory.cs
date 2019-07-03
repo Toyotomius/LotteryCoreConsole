@@ -1,5 +1,4 @@
 ﻿using LotteryCoreConsole.FileManagement;
-using LotteryCoreConsole.GetSetObjects;
 using LotteryCoreConsole.Interfaces;
 using LotteryCoreConsole.PairsCode;
 using LotteryCoreConsole.Settings;
@@ -10,110 +9,100 @@ namespace LotteryCoreConsole
 {
     public static class Factory
     {
-        public static IFileOut CreateFileOut()
+        internal static IBeginLottoCalculations CreateBeginLottoCalculations()
         {
-            return new FileOut();
+            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(), CreateParaPairs(), CreateParaTriplets());
         }
 
-        public static IListJsonSerializer CreateJsonSerializer()
+        internal static IGetSettings CreateGetSettings()
         {
-            return new ListJsonSerializer();
+            return new GetSettings(SetNewSettings());
         }
 
-        public static ILogging CreateLogger()
+        internal static ILogging CreateLogger()
         {
             return new Logging();
         }
 
-        public static ILottoData CreateLottoData()
-        {
-            return new LottoData();
-        }
-
-        public static IMakeLottoList CreateLottoList()
+        internal static IMakeLottoList CreateLottoList()
         {
             return new MakeLottoList();
         }
 
-        public static INumberParsing CreateNumberParser()
-        {
-            return new NumberParsing();
-        }
-
-        public static ILottoPairsFileOut CreatePairsFileOut()
-        {
-            return new LottoPairsFileOut(CreateFileOut());
-        }
-
-        public static ILottoPairsJsonSerial CreatePairsJsonSerial()
-        {
-            return new LottoPairsJsonSerial(CreateJsonSerializer(), CreatePairsFileOut());
-        }
-
-        public static IPairs CreatePairsList()
-        {
-            return new Pairs();
-        }
-
-        public static IParaPairs CreateParaPairs()
-        {
-            return new ParaPairs(CreatePairsJsonSerial());
-        }
-
-        public static IParaSingles CreateParaSingles()
-        {
-            return new ParaSingles(CreateSinglesJSonSerial());
-        }
-
-        public static IParaTriplets CreateParaTriplets()
-        {
-            return new ParaTriplets(CreateTripsJsonSerial());
-        }
-
-        public static ISettings CreateSettings()
-        {
-            return new Settings.Settings();
-        }
-
-        public static ILottoSinglesFileOut CreateSinglesFileOut()
-        {
-            return new LottoSinglesFileOut(CreateFileOut());
-        }
-
-        public static ILottoSinglesJsonSerial CreateSinglesJSonSerial()
-        {
-            return new LottoSinglesJsonSerial(CreateJsonSerializer(), CreateSinglesFileOut());
-        }
-
-        public static ISingles CreateSinglesList()
-        {
-            return new Singles();
-        }
-
-        public static IBeginLottoCalculations CreateStartLottoLists()
+        internal static IBeginLottoCalculations CreateStartLottoLists()
         {
             return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
                                                 CreateParaPairs(), CreateParaTriplets());
         }
 
-        public static ITriplets CreateTripletList()
+        internal static ISetSettings SetNewSettings()
         {
-            return new Triplets();
+            return new SetSettings(CreateSettings(), CreateLogger());
         }
 
-        public static ILottoTripsFileOut CreateTripsFileOut()
+        private static IFileOut CreateFileOut()
+        {
+            return new FileOut();
+        }
+
+        private static IListJsonSerializer CreateJsonSerializer()
+        {
+            return new ListJsonSerializer();
+        }
+
+        private static INumberParsing CreateNumberParser()
+        {
+            return new NumberParsing();
+        }
+
+        private static ILottoPairsFileOut CreatePairsFileOut()
+        {
+            return new LottoPairsFileOut(CreateFileOut());
+        }
+
+        private static ILottoPairsJsonSerial CreatePairsJsonSerial()
+        {
+            return new LottoPairsJsonSerial(CreateJsonSerializer(), CreatePairsFileOut());
+        }
+
+        private static IParaPairs CreateParaPairs()
+        {
+            return new ParaPairs(CreatePairsJsonSerial());
+        }
+
+        private static IParaSingles CreateParaSingles()
+        {
+            return new ParaSingles(CreateSinglesJSonSerial());
+        }
+
+        private static IParaTriplets CreateParaTriplets()
+        {
+            return new ParaTriplets(CreateTripsJsonSerial());
+        }
+
+        private static ISettings CreateSettings()
+        {
+            return new Settings.Settings();
+        }
+
+        private static ILottoSinglesFileOut CreateSinglesFileOut()
+        {
+            return new LottoSinglesFileOut(CreateFileOut());
+        }
+
+        private static ILottoSinglesJsonSerial CreateSinglesJSonSerial()
+        {
+            return new LottoSinglesJsonSerial(CreateJsonSerializer(), CreateSinglesFileOut());
+        }
+
+        private static ILottoTripsFileOut CreateTripsFileOut()
         {
             return new LottoTripsFileOut(CreateFileOut());
         }
 
-        public static ILottoTripsJsonSerial CreateTripsJsonSerial()
+        private static ILottoTripsJsonSerial CreateTripsJsonSerial()
         {
             return new LottoTripsJsonSerial(CreateJsonSerializer(), CreateTripsFileOut());
-        }
-
-        public static ISetSettings SetNewSettings()
-        {
-            return new SetSettings(CreateSettings(), CreateLogger());
         }
     }
 }

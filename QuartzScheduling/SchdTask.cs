@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+
+using LotteryCoreConsole.WebsiteScraping;
+
 using Quartz;
 using Quartz.Impl;
 
@@ -10,9 +13,9 @@ namespace LotteryCoreConsole.QuartzScheduling
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            WebsiteScraping.WebsiteScraping ws = new WebsiteScraping.WebsiteScraping();
+            IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
             Console.WriteLine($"{DateTime.Now}  : Starting Scrape");
-            ws.Scrape();
+            await websiteScraping.ScrapeAsync();
         }
     }
 
