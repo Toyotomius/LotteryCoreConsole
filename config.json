@@ -6,5 +6,5 @@
   //TODO: Set up the ability to put the draw-time with the websites for auto-scraping.
 
   "LotteryMasterFiles": [ "Break.json", "Lotto649.json", "Example.json", "Lotto649During.json" ],
-  "ScrapeLotteryWebsites": "True"
+  "ScrapeLotteryWebsites": "False"
 }
