@@ -1,12 +1,13 @@
 ﻿using System;
-
+using System.IO;
 using LotteryCoreConsole.WebsiteScraping.Interfaces;
 
 namespace LotteryCoreConsole.WebsiteScraping
 {
     public static class ScrapeSchedFactory
     {
-        public static IUserAgentPicker CreateUserAgentPicker()
+        
+        private static IUserAgentPicker CreateUserAgentPicker()
         {
             return new UserAgentPicker(CreateRandom());
         }

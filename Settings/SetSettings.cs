@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-
-using LotteryCoreConsole.Interfaces;
-
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Settings
@@ -50,7 +48,7 @@ namespace LotteryCoreConsole.Settings
                 try
                 {
                     // tries to create list of json objects from the contents of the file from config
-                    _lotteryJObject.Add(JObject.Parse(File.ReadAllText($"{LotteryFile[i]}")));
+                    _lotteryJObject.Add(JObject.Parse(File.ReadAllText($"./Data Files/{LotteryFile[i]}")));
                 }
                 catch (Exception) when (!File.Exists(LotteryFile[i]))
                 {

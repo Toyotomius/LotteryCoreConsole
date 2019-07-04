@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
-using LotteryCoreConsole.Interfaces;
-
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+using LotteryCoreConsole.WebsiteScraping;
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole
@@ -17,6 +16,8 @@ namespace LotteryCoreConsole
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
+                IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
+                await websiteScraping.ScrapeAsync();
             }
             // Task scheduler chain for specific lotteries.
             //SchdTask schd = new SchdTask();
@@ -25,8 +26,7 @@ namespace LotteryCoreConsole
             //{
             //}
 
-            //IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
-            //await websiteScraping.ScrapeAsync();
+
 
             //Console.ReadKey();
 

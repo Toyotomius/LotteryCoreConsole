@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using LotteryCoreConsole.Interfaces;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using Newtonsoft.Json;
 
 namespace LotteryCoreConsole.FileManagement

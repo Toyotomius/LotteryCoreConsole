@@ -1,9 +1,10 @@
 ﻿using LotteryCoreConsole.FileManagement;
-using LotteryCoreConsole.Interfaces;
-using LotteryCoreConsole.PairsCode;
+using LotteryCoreConsole.Lottery_Calculation;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+using LotteryCoreConsole.Lottery_Calculation.PairsCode;
+using LotteryCoreConsole.Lottery_Calculation.SinglesCode;
+using LotteryCoreConsole.Lottery_Calculation.TripletsCode;
 using LotteryCoreConsole.Settings;
-using LotteryCoreConsole.SinglesCode;
-using LotteryCoreConsole.TripletsCode;
 
 namespace LotteryCoreConsole
 {
