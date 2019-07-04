@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace LotteryCoreConsole.WebsiteScraping.Interfaces
+namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces
 {
     public interface IUserAgentPicker
     {

@@ -3,15 +3,12 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-
 using HtmlAgilityPack;
-
-using LotteryCoreConsole.WebsiteScraping.Interfaces;
-
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace LotteryCoreConsole.WebsiteScraping
+namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
     public interface IWebsiteScraping
     {

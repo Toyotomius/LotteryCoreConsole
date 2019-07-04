@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-using LotteryCoreConsole.WebsiteScraping;
+using LotteryCoreConsole.ScrapeAndQuartz;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole
@@ -16,7 +17,7 @@ namespace LotteryCoreConsole
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
-                IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
+                IWebsiteScraping websiteScraping = SCrapeAndQuartzFactory.CreateWebSiteScraping();
                 await websiteScraping.ScrapeAsync();
             }
             // Task scheduler chain for specific lotteries.

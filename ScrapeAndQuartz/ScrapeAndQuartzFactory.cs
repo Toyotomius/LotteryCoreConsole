@@ -1,10 +1,10 @@
 ﻿using System;
-using System.IO;
-using LotteryCoreConsole.WebsiteScraping.Interfaces;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 
-namespace LotteryCoreConsole.WebsiteScraping
+namespace LotteryCoreConsole.ScrapeAndQuartz
 {
-    public static class ScrapeSchedFactory
+    public static class SCrapeAndQuartzFactory
     {
         
         private static IUserAgentPicker CreateUserAgentPicker()
@@ -14,7 +14,7 @@ namespace LotteryCoreConsole.WebsiteScraping
 
         public static IWebsiteScraping CreateWebSiteScraping()
         {
-            return new WebsiteScraping(CreateUserAgentPicker());
+            return new WebsiteScraping.WebsiteScraping(CreateUserAgentPicker());
         }
 
         private static Random CreateRandom()
