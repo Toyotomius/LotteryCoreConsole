@@ -10,7 +10,7 @@ namespace LotteryCoreConsole
 {
     internal static class Program
     {
-        public static ManualResetEvent resetEvent = new ManualResetEvent(false);
+        
         private static async System.Threading.Tasks.Task Main()
         {
            
