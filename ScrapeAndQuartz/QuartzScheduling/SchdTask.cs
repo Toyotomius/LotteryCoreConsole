@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-
-using LotteryCoreConsole.WebsiteScraping;
-
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
 using Quartz;
 using Quartz.Impl;
 
-namespace LotteryCoreConsole.QuartzScheduling
+namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
 {
     public class HelloJob : IJob
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
+            IWebsiteScraping websiteScraping = SCrapeAndQuartzFactory.CreateWebSiteScraping();
             Console.WriteLine($"{DateTime.Now}  : Starting Scrape");
             await websiteScraping.ScrapeAsync();
         }

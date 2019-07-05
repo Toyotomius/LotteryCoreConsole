@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-using LotteryCoreConsole.WebsiteScraping;
+using LotteryCoreConsole.ScrapeAndQuartz;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole
 {
     internal static class Program
     {
+        public static ManualResetEvent resetEvent = new ManualResetEvent(false);
         private static async System.Threading.Tasks.Task Main()
         {
+           
+            
             IGetSettings set = Factory.CreateGetSettings();
             (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) = await set.RetrieveSettings();
 
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
-                IWebsiteScraping websiteScraping = ScrapeSchedFactory.CreateWebSiteScraping();
+                IWebsiteScraping websiteScraping = SCrapeAndQuartzFactory.CreateWebSiteScraping();
                 await websiteScraping.ScrapeAsync();
             }
             // Task scheduler chain for specific lotteries.
@@ -35,12 +40,14 @@ namespace LotteryCoreConsole
             // TODO: Clean up logfile at various points.
 
             IBeginLottoCalculations beginCalc = Factory.CreateBeginLottoCalculations();
-            beginCalc.LottoChain(lotteryInfo);
-
+            await beginCalc.LottoChain(lotteryInfo);
+            //resetEvent.WaitOne();
             // First time run separated out for easier future expansion.
         }
     }
 }
+
+// TODO: Lotto file doesn't finish writing before program exits.
 
 // TODO: Dependency Injection.
 // TODO: Sanity checks. All the sanity. It's currently without any ability to remain sane.

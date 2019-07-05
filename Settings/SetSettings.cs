@@ -50,7 +50,7 @@ namespace LotteryCoreConsole.Settings
                     // tries to create list of json objects from the contents of the file from config
                     _lotteryJObject.Add(JObject.Parse(File.ReadAllText($"./Data Files/{LotteryFile[i]}")));
                 }
-                catch (Exception) when (!File.Exists(LotteryFile[i]))
+                catch (Exception) when (!File.Exists($"./Data Files/{LotteryFile[i]}"))
                 {
                     _logger.Log($"{DateTime.Now} : " +
                                      $"File \"{LotteryFile[i]}\" Does Not Exist. Verify the folder location & is correctly named in the config.\n" +
