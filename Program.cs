@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
+
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.ScrapeAndQuartz;
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole
 {
     internal static class Program
     {
-        public static ManualResetEvent resetEvent = new ManualResetEvent(false);
         private static async System.Threading.Tasks.Task Main()
         {
-           
-            
             IGetSettings set = Factory.CreateGetSettings();
             (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) = await set.RetrieveSettings();
 
@@ -30,8 +28,6 @@ namespace LotteryCoreConsole
             //while (true)
             //{
             //}
-
-
 
             //Console.ReadKey();
 

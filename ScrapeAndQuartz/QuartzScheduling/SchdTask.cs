@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+
 using Quartz;
 using Quartz.Impl;
 

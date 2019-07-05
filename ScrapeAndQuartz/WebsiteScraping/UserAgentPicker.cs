@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
@@ -8,7 +9,6 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
     public class UserAgentPicker : IUserAgentPicker
     {
         private readonly Random _rand;
-
 
         //private readonly string[] _uAgentsArray =
         //    {
@@ -48,11 +48,9 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         {
             string[] uAgentsArray = File.ReadAllLines($"./Data Files/useragents.txt");
 
-
             Task<string> randomAgentTask = Task.FromResult(uAgentsArray[_rand.Next(uAgentsArray.Length)]);
-            
+
             return await randomAgentTask;
-            
         }
     }
 }

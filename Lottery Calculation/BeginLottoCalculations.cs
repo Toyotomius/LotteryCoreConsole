@@ -2,7 +2,6 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading;
 using System.Threading.Tasks;
 
 using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
@@ -31,11 +30,10 @@ namespace LotteryCoreConsole.Lottery_Calculation
 
         public async Task LottoChain((List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo)
         {
-
             ILogging log = Factory.CreateLogger();
             ConcurrentBag<string> parallelLog = new ConcurrentBag<string>();
             List<LottoData> lotto = new List<LottoData>();
-            var task = Task.Run(() => 
+            var task = Task.Run(() =>
             Parallel.ForEach(lotteryInfo.LotteryJObject, (currentObject) =>
 
             {
@@ -55,7 +53,7 @@ namespace LotteryCoreConsole.Lottery_Calculation
                        "    * See example.json for correct format. Ensure root object & file name are identical.");
                     //continue;
                 }
-                
+
                 if (0 != lotto.Count)
                 {
                     string resultsPath = $"./Lottery Results/{lotteryName}/";
@@ -75,7 +73,7 @@ namespace LotteryCoreConsole.Lottery_Calculation
             Console.WriteLine(
                     $"{DateTimeOffset.Parse(DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")).ToString("MM/dd/yyyy hh:mm:ss.fff tt")}" +
                     " : Done");
-            
+
             //LotteryCoreConsole.Program.resetEvent.Set();
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 
 namespace LotteryCoreConsole.Lottery_Calculation.PairsCode
@@ -15,7 +16,6 @@ namespace LotteryCoreConsole.Lottery_Calculation.PairsCode
 
         public async Task WriteFileAsync(string lotteryName, string data)
         {
-
             string path = $@"./Lottery Results/{lotteryName}/Pairs.json";
             await _fileOut.WriteFile(path, data);
             Console.WriteLine(

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 
 namespace LotteryCoreConsole.Lottery_Calculation.TripletsCode
@@ -15,7 +16,6 @@ namespace LotteryCoreConsole.Lottery_Calculation.TripletsCode
 
         public async Task WriteFileAsync(string lotteryName, string data)
         {
-
             string path = $@"./Lottery Results/{lotteryName}/Triplets.json";
             await _fileOut.WriteFile(path, data);
             Console.WriteLine(

@@ -11,6 +11,7 @@ namespace LotteryCoreConsole.FileManagement
         {
             using (StreamWriter sw = new StreamWriter(path))
             {
+                // ReSharper disable once AccessToDisposedClosure - Resolved issue with program exit before write was finished.
                 Task writeTask = Task.Run(() => sw.WriteLine(data));
 
                 await writeTask;
