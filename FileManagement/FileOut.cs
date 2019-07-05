@@ -1,17 +1,19 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
+
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 
 namespace LotteryCoreConsole.FileManagement
 {
     public class FileOut : IFileOut
     {
-        public async Task WriteFile(string lotteryName, string data)
+        public async Task WriteFile(string path, string data)
         {
-            string path = lotteryName;
             using (StreamWriter sw = new StreamWriter(path))
             {
-                await sw.WriteLineAsync(data);
+                Task writeTask = Task.Run(() => sw.WriteLine(data));
+
+                await writeTask;
             }
         }
     }
