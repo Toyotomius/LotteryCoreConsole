@@ -43,7 +43,7 @@ namespace LotteryCoreConsole
     }
 }
 
-// TODO: Lotto file doesn't finish writing before program exits.
+
 
 // TODO: Dependency Injection.
 // TODO: Sanity checks. All the sanity. It's currently without any ability to remain sane.

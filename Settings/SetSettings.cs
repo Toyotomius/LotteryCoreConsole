@@ -55,9 +55,16 @@ namespace LotteryCoreConsole.Settings
                 catch (Exception) when (!File.Exists($"./Data Files/{LotteryFile[i]}"))
                 {
                     _logger.Log($"{DateTime.Now} : " +
-                                     $"File \"{LotteryFile[i]}\" Does Not Exist. Verify the folder location & is correctly named in the config.\n" +
-                                     $"    * Check the config.json file for proper format.");
+                                $"File \"{LotteryFile[i]}\" Does Not Exist. Verify the folder location & is correctly named in the config.\n" +
+                                "    * Check the config.json file for proper format.");
 
+                    LotteryFile.Remove(LotteryFile[i]);
+                }
+                catch (Newtonsoft.Json.JsonReaderException)
+                {
+                    _logger.Log($"{DateTime.Now} : " +
+                                $"File \"{LotteryFile[i]}\" Is not a valid Json file.\n" +
+                                "    * Check the config.json file for proper format.");
                     LotteryFile.Remove(LotteryFile[i]);
                 }
             }
