@@ -1,11 +1,11 @@
-﻿using System;
+﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+
+using Newtonsoft.Json.Linq;
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-
-using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-
-using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Settings
 {

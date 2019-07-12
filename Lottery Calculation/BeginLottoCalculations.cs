@@ -1,13 +1,13 @@
-﻿using System;
+﻿using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+
+using Newtonsoft.Json.Linq;
+
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-
-using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
-using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-
-using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Lottery_Calculation
 {
@@ -73,8 +73,6 @@ namespace LotteryCoreConsole.Lottery_Calculation
             Console.WriteLine(
                     $"{DateTimeOffset.Parse(DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")).ToString("MM/dd/yyyy hh:mm:ss.fff tt")}" +
                     " : Done");
-
-            //LotteryCoreConsole.Program.resetEvent.Set();
         }
     }
 }
