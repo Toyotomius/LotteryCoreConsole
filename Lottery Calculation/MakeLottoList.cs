@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+
 using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+
 using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Lottery_Calculation

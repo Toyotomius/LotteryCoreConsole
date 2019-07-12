@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Specialized;
-using System.Threading.Tasks;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+
 using Quartz;
 using Quartz.Impl;
+
+using System;
+using System.Collections.Specialized;
+using System.Threading.Tasks;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
 {
@@ -13,7 +15,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
         {
             IWebsiteScraping websiteScraping = SCrapeAndQuartzFactory.CreateWebSiteScraping();
             Console.WriteLine($"{DateTime.Now}  : Starting Scrape");
-            await websiteScraping.ScrapeAsync();
+            await websiteScraping.CreateDriverAsync();
         }
     }
 

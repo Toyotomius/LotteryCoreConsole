@@ -1,15 +1,15 @@
-﻿using System;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+
+using System;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz
 {
     public static class SCrapeAndQuartzFactory
     {
-        
-        private static IUserAgentPicker CreateUserAgentPicker()
+        public static ILotto649Scrape CreateLotto649Scrape()
         {
-            return new UserAgentPicker(CreateRandom());
+            return new Lotto649Scrape(CreateUserAgentPicker());
         }
 
         public static IWebsiteScraping CreateWebSiteScraping()
@@ -20,6 +20,11 @@ namespace LotteryCoreConsole.ScrapeAndQuartz
         private static Random CreateRandom()
         {
             return new Random();
+        }
+
+        private static IUserAgentPicker CreateUserAgentPicker()
+        {
+            return new UserAgentPicker(CreateRandom());
         }
     }
 }

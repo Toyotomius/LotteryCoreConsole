@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+
 using Newtonsoft.Json.Linq;
+
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LotteryCoreConsole.Settings
 {

@@ -1,57 +1,41 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using HtmlAgilityPack;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+
+using System.IO;
+using System.Reflection;
+using System.Threading.Tasks;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
     public interface IWebsiteScraping
     {
-        Task ScrapeAsync();
+        Task<IWebDriver> CreateDriverAsync();
     }
 
     public class WebsiteScraping : IWebsiteScraping
     {
-        private IUserAgentPicker _uAgentPicker;
+        internal readonly IUserAgentPicker _uAgentPicker;
 
         public WebsiteScraping(IUserAgentPicker uAgentPicker)
         {
             _uAgentPicker = uAgentPicker;
         }
 
-        public async Task ScrapeAsync()
+        public virtual async Task<IWebDriver> CreateDriverAsync()
         {
             string uAgent = await _uAgentPicker.RandomUserAgentAsync();
             ChromeOptions coptions = new ChromeOptions();
             coptions.AddArgument($"--user-agent={uAgent}");
             coptions.AddArgument("headless");
-            IWebDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), coptions);
-
-            driver.Url = "http://localhost:8000/test.htm";
+            Task<ChromeDriver> driverTask = Task.Run(() => new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), coptions));
 
             //Screenshot sh = driver.GetScreenshot();
             //sh.SaveAsFile(@"C:\Misc\Temp.jpg", ImageFormat.Png);
 
-            var source = driver.PageSource;
-            var alc = new HtmlDocument();
-            alc.LoadHtml(source);
-
-            Console.WriteLine("BreakPoint");
-
             // ALC Winner Website: https://www.alc.ca/content/alc/en/winning-numbers.html
 
-            var lotto649 = alc.DocumentNode.SelectNodes("//div[@class='panel-group category-accordion-Lotto649']");
-            var lotto649DrawDate = alc.DocumentNode.SelectSingleNode("//script[contains(.,'gameId: \"Lotto649\"')]");
-            var drawdateIndex = lotto649DrawDate.InnerHtml.LastIndexOf("drawDatesData");
-            var test = lotto649DrawDate.InnerText.Substring(drawdateIndex);
-            var lotto649DrawNums = lotto649.Descendants("li").Select(x => x.InnerText).ToArray();
-
-            Console.WriteLine("BreakPoint");
             //var lottoMax = alc.DocumentNode.SelectNodes("//div[@id='lotto-LottoMax']");
             //var lottoMaxDrawDate = lottoMax.Descendants("input").First().Attributes["value"].Value;
             //var lottoMaxDrawNums = lottoMax.Descendants("li").Select(x => x.InnerText).ToArray();
@@ -61,7 +45,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
             //    Console.WriteLine(itm.ToString());
             //    Console.WriteLine("Breakpoint");
             //}
-            return;
+            return await driverTask;
         }
 
         // TODO: Set date by automated scrape time. Or use a regex to parse the <script> for the latest date.
