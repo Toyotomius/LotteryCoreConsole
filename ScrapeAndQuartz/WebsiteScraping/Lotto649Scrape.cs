@@ -8,12 +8,33 @@ using System.Threading.Tasks;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
+    /// <summary>
+    /// Scrapes the Atlantic Lottery Corporation Website @ https://www.alc.ca/content/alc/en/winning-numbers.html for the
+    /// winning Lotto649 numbers. Draws every Wed and Sat.
+    /// </summary>
     public class Lotto649Scrape : WebsiteScraping, ILotto649Scrape
     {
-        public Lotto649Scrape(IUserAgentPicker uAgentPicker) : base(uAgentPicker)
+        private readonly IFormatNewLotteryResult _formatNewLotteryResult;
+        private readonly IWriteNewLottoResult _writeNewResult;
+
+        /// <summary>
+        /// Constructor uses uAgentPicker (not really) from base class, FormatNewLottery and WriteNewLottoResults to
+        /// handle the information returned from the scrape.
+        /// </summary>
+        /// <param name="uAgentPicker"></param>
+        /// <param name="formatNewLotteryResult"></param>
+        /// <param name="writeNewLottoResult"></param>
+        public Lotto649Scrape(IUserAgentPicker uAgentPicker, IFormatNewLotteryResult formatNewLotteryResult,
+                              IWriteNewLottoResult writeNewLottoResult) : base(uAgentPicker)
         {
+            _formatNewLotteryResult = formatNewLotteryResult;
+            _writeNewResult = writeNewLottoResult;
         }
 
+        /// <summary>
+        /// Scrapes the winning results for Lotto649 with help from base class.
+        /// </summary>
+        /// <returns></returns>
         public async Task ScrapeLotto649Async()
         {
             var driver = await base.CreateDriverAsync().ConfigureAwait(false);
@@ -27,9 +48,15 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
             var lotto649DrawDate = alc.DocumentNode.SelectSingleNode("//script[contains(.,'gameId: \"Lotto649\"')]");
             var drawdateIndex = lotto649DrawDate.InnerHtml.LastIndexOf("drawDatesData");
 
-            var lotto649DrawNums = lotto649.Descendants("li").Select(x => x.InnerText).ToArray();
+            var lotto649DrawNumsArray = lotto649.Descendants("li").Select(x => x.InnerText).ToArray();
+            var lotto649DrawNums = String.Join(", ", lotto649DrawNumsArray);
 
-            Console.WriteLine("Breakpoint");
+            var newResults = await _formatNewLotteryResult.FormatResult(lotto649DrawNums);
+
+            var writeTask = Task.Run(() => _writeNewResult.WriteNewResults("Lotto649", newResults));
+            await writeTask;
         }
     }
 }
+
+// TODO: Sanity checks.

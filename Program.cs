@@ -1,6 +1,6 @@
 ﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.ScrapeAndQuartz;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 
 using Newtonsoft.Json.Linq;
 
