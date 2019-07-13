@@ -1,7 +1,7 @@
-﻿using System.IO;
-using System.Threading.Tasks;
+﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 
-using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace LotteryCoreConsole.FileManagement
 {

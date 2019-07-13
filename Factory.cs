@@ -10,6 +10,11 @@ namespace LotteryCoreConsole
 {
     public static class Factory
     {
+        public static IFileOut CreateFileOut()
+        {
+            return new FileOut();
+        }
+
         internal static IBeginLottoCalculations CreateBeginLottoCalculations()
         {
             return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(), CreateParaPairs(), CreateParaTriplets());
@@ -39,11 +44,6 @@ namespace LotteryCoreConsole
         internal static ISetSettings SetNewSettings()
         {
             return new SetSettings(CreateSettings(), CreateLogger());
-        }
-
-        private static IFileOut CreateFileOut()
-        {
-            return new FileOut();
         }
 
         private static IListJsonSerializer CreateJsonSerializer()

@@ -16,16 +16,16 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 
     public class WebsiteScraping : IWebsiteScraping
     {
-        internal readonly IUserAgentPicker _uAgentPicker;
+        internal readonly IUserAgentPicker UAgentPicker;
 
         public WebsiteScraping(IUserAgentPicker uAgentPicker)
         {
-            _uAgentPicker = uAgentPicker;
+            UAgentPicker = uAgentPicker;
         }
 
         public virtual async Task<IWebDriver> CreateDriverAsync()
         {
-            string uAgent = await _uAgentPicker.RandomUserAgentAsync();
+            string uAgent = await UAgentPicker.RandomUserAgentAsync();
             ChromeOptions coptions = new ChromeOptions();
             coptions.AddArgument($"--user-agent={uAgent}");
             coptions.AddArgument("headless");

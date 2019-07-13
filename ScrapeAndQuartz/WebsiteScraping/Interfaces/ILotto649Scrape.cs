@@ -1,11 +1,13 @@
-﻿using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
-namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
+using System.Threading.Tasks;
+
+namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces
 {
     public interface ILotto649Scrape
     {
-        Task  ScrapeLotto649Async();
         Task<IWebDriver> CreateDriverAsync();
+
+        Task ScrapeLotto649Async();
     }
 }
