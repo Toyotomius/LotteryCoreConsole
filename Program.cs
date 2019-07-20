@@ -1,26 +1,26 @@
-﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+﻿using System;
+using System.Threading.Tasks;
 using LotteryCoreConsole.ScrapeAndQuartz;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
-
-using Newtonsoft.Json.Linq;
-
-using System;
-using System.Collections.Generic;
 
 namespace LotteryCoreConsole
 {
     internal static class Program
     {
-        private static async System.Threading.Tasks.Task Main()
+        private static async Task Main()
         {
-            IGetSettings set = Factory.CreateGetSettings();
-            (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) = await set.RetrieveSettings();
+            var set = Factory.CreateGetSettings();
+            var (lotteryFile, lotteryJObject, scrapeWebsites) = await set.RetrieveSettings();
+
 
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
-                ILotto649Scrape lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
+                var lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
                 await lotto649Scrape.ScrapeLotto649Async();
+            }
+
+            while (true)
+            {
             }
             // Task scheduler chain for specific lotteries.
             //SchdTask schd = new SchdTask();

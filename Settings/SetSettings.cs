@@ -1,11 +1,10 @@
-﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-
-using Newtonsoft.Json.Linq;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Settings
 {
@@ -23,10 +22,11 @@ namespace LotteryCoreConsole.Settings
 
         private List<string> LotteryFile { get; set; }
 
-        public async Task<(List<string> LotteryFile, List<JObject> LotteryJObject, bool scrapeWebsites)> ApplySettingsAsync()
+        public async Task<(List<string> LotteryFile, List<JObject> LotteryJObject, bool scrapeWebsites)>
+            ApplySettingsAsync()
         {
-            Task<JObject> settingsFromFileTask = _settings.ReadSettings();
-            JObject settingsFromFile = await settingsFromFileTask;
+            var settingsFromFileTask = _settings.ReadSettings();
+            var settingsFromFile = await settingsFromFileTask;
 
             //TODO: Check to see if a file has been added to.Ignore it if it hasn't been.
             // TODO: Clean up logfile at various points.
@@ -36,17 +36,13 @@ namespace LotteryCoreConsole.Settings
 
             // Checks for True/False for scraping websites on first run. If true, sets up Quartz timers to scrape new
             // winning numbers automatically.
-            bool scrapeWebsites = settingsFromFile["ScrapeLotteryWebsites"].ToObject<bool>();
+            var scrapeWebsites = settingsFromFile["ScrapeLotteryWebsites"].ToObject<bool>();
 
             // Takes each item from the array of json lottery files and adds it to a list
-            foreach (JToken itm in settingsFromFile["LotteryMasterFiles"])
-            {
-                LotteryFile.Add(itm.ToString());
-            }
+            foreach (var itm in settingsFromFile["LotteryMasterFiles"]) LotteryFile.Add(itm.ToString());
 
             // Descending for loop to allow for removing any files that are not present while logging such.
             for (var i = LotteryFile.Count - 1; i >= 0; i--)
-            {
                 try
                 {
                     // tries to create list of json objects from the contents of the file from config
@@ -60,14 +56,13 @@ namespace LotteryCoreConsole.Settings
 
                     LotteryFile.Remove(LotteryFile[i]);
                 }
-                catch (Newtonsoft.Json.JsonReaderException)
+                catch (JsonReaderException)
                 {
                     _logger.Log($"{DateTime.Now} : " +
                                 $"File \"{LotteryFile[i]}\" Is not a valid Json file.\n" +
                                 "    * Check the config.json file for proper format.");
                     LotteryFile.Remove(LotteryFile[i]);
                 }
-            }
 
             // Reverses list to compensate for descending for loop
             _lotteryJObject.Reverse();
