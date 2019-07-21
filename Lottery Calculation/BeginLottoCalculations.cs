@@ -30,41 +30,40 @@ namespace LotteryCoreConsole.Lottery_Calculation
 
         public async Task LottoChain((List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo)
         {
-            var log = Factory.CreateLogger();
-            var parallelLog = new ConcurrentBag<string>();
-            var lotto = new List<LottoData>();
-            var task = Task.Run(() =>
-                Parallel.ForEach(lotteryInfo.LotteryJObject, currentObject =>
+            ILogging log = Factory.CreateLogger();
+            ConcurrentBag<string> parallelLog = new ConcurrentBag<string>();
+            List<LottoData> lotto = new List<LottoData>();
+            Task<ParallelLoopResult> task = Task.Run(() => Parallel.ForEach(lotteryInfo.LotteryJObject, currentObject =>
+            {
+                int i = lotteryInfo.LotteryJObject.IndexOf(currentObject);
+                string lotteryName = $"{Path.GetFileNameWithoutExtension(lotteryInfo.LotteryFile[i])}";
+                JObject lotteryData = lotteryInfo.LotteryJObject[i];
+                IMakeLottoList createLottoList = Factory.CreateLottoList();
 
+                try
                 {
-                    var i = lotteryInfo.LotteryJObject.IndexOf(currentObject);
-                    var lotteryName = $"{Path.GetFileNameWithoutExtension(lotteryInfo.LotteryFile[i])}";
-                    var lotteryData = lotteryInfo.LotteryJObject[i];
-                    var createLottoList = Factory.CreateLottoList();
+                    lotto = createLottoList.CreateLottoList(lotteryName, lotteryData);
+                }
+                catch (ArgumentNullException)
+                {
+                    parallelLog.Add(
+                        $"{DateTime.Now} : Lottery Data List creation failed for \"{lotteryInfo.LotteryFile[i]}\". Verify the json file is correctly formed.\n" +
+                        "    * See example.json for correct format. Ensure root object & file name are identical.");
+                    //continue;
+                }
 
-                    try
-                    {
-                        lotto = createLottoList.CreateLottoList(lotteryName, lotteryData);
-                    }
-                    catch (ArgumentNullException)
-                    {
-                        parallelLog.Add(
-                            $"{DateTime.Now} : Lottery Data List creation failed for \"{lotteryInfo.LotteryFile[i]}\". Verify the json file is correctly formed.\n" +
-                            "    * See example.json for correct format. Ensure root object & file name are identical.");
-                        //continue;
-                    }
+                if (0 != lotto.Count)
+                {
+                    string resultsPath = $"./Lottery Results/{lotteryName}/";
+                    if (!Directory.Exists(resultsPath)) Directory.CreateDirectory(resultsPath);
+                    (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers) parsedLotto =
+                        _lottoNumberParser.ParseLottoList(lotto);
 
-                    if (0 != lotto.Count)
-                    {
-                        var resultsPath = $"./Lottery Results/{lotteryName}/";
-                        if (!Directory.Exists(resultsPath)) Directory.CreateDirectory(resultsPath);
-                        var parsedLotto = _lottoNumberParser.ParseLottoList(lotto);
-
-                        _paraTriplets.FindTripsParallel(lotteryName, parsedLotto);
-                        _paraPairs.FindPairsParallel(lotteryName, parsedLotto);
-                        _paraSingles.FindSinglesParallel(lotteryName, parsedLotto);
-                    }
-                }));
+                    _paraTriplets.FindTripsParallel(lotteryName, parsedLotto);
+                    _paraPairs.FindPairsParallel(lotteryName, parsedLotto);
+                    _paraSingles.FindSinglesParallel(lotteryName, parsedLotto);
+                }
+            }));
             await task;
             log.Log(string.Join(Environment.NewLine, parallelLog));
             Console.WriteLine(

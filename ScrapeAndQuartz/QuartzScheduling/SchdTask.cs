@@ -1,11 +1,10 @@
 ﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
-
 using Quartz;
 using Quartz.Impl;
-
 using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
 {
@@ -13,9 +12,9 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            IWebsiteScraping websiteScraping = SCrapeAndQuartzFactory.CreateWebSiteScraping();
+            ILotteryScrape lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
             Console.WriteLine($"{DateTime.Now}  : Starting Scrape");
-            await websiteScraping.CreateDriverAsync();
+            await lotto649Scrape.ScrapeLotteryAsync();
         }
     }
 
@@ -24,19 +23,19 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
         public async void Schedule()
         {
             IJobDetail job = JobBuilder.Create<HelloJob>().WithIdentity("myJob", "group1").Build();
-            var trigger = TriggerBuilder.Create().WithIdentity("test", "group1")
+            ITrigger trigger = TriggerBuilder.Create().WithIdentity("test", "group1")
                 .WithCronSchedule("0/30 * * * * ?").ForJob("myJob", "group1").Build();
 
-            NameValueCollection props = new NameValueCollection
+            var props = new NameValueCollection
             {
-                { "quartz.serializer.type", "binary" }
+                {"quartz.serializer.type", "binary"}
             };
-            StdSchedulerFactory factory = new StdSchedulerFactory(props);
+            var factory = new StdSchedulerFactory(props);
 
             IScheduler sched = await factory.GetScheduler();
             await sched.Start();
 
-            SchdTask schdtask = new SchdTask();
+            var schdtask = new SchdTask();
             await sched.ScheduleJob(job, trigger);
         }
     }

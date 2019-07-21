@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.ScrapeAndQuartz;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole
 {
@@ -8,15 +12,16 @@ namespace LotteryCoreConsole
     {
         private static async Task Main()
         {
-            var set = Factory.CreateGetSettings();
-            var (lotteryFile, lotteryJObject, scrapeWebsites) = await set.RetrieveSettings();
+            IGetSettings set = Factory.CreateGetSettings();
+            (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) =
+                await set.RetrieveSettings();
 
 
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
-                var lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
-                await lotto649Scrape.ScrapeLotto649Async();
+                ILotteryScrape lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
+                await lotto649Scrape.ScrapeLotteryAsync();
             }
 
             while (true)

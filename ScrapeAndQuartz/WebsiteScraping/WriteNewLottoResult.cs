@@ -25,15 +25,15 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         public async Task WriteNewResults(string lotteryName, string newResults)
         {
             // Reads current file into memory
-            var path = $@".\Data Files\{lotteryName}.json";
+            string path = $@".\Data Files\{lotteryName}.json";
             using (var sr = new StreamReader(path))
             {
                 _contents = sr.ReadToEnd();
             }
 
-            var index = _contents.IndexOf("[") + 1; // +1 to insert to the _right_ of the indicated character.
-            var newFileTask = Task.Run(() => _contents.Insert(index, newResults));
-            var newFile = await newFileTask;
+            int index = _contents.IndexOf("[") + 1; // +1 to insert to the _right_ of the indicated character.
+            Task<string> newFileTask = Task.Run(() => _contents.Insert(index, newResults));
+            string newFile = await newFileTask;
 
             await WriteFile(path, newFile);
             // Raises event after the writing is finished to update the singles, pairs & triplets data.

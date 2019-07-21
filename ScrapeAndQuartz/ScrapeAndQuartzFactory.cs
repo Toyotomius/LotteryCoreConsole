@@ -1,6 +1,5 @@
 ﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
-
 using System;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz
@@ -10,14 +9,20 @@ namespace LotteryCoreConsole.ScrapeAndQuartz
     /// </summary>
     public static class SCrapeAndQuartzFactory
     {
+        public static IWebsiteScraping CreateWebsiteScraping()
+        {
+            return new WebsiteScraping.WebsiteScraping(CreateUserAgentPicker());
+        }
+
         public static IFormatNewLotteryResult CreateFormatNewLotteryResult()
         {
             return new FormatNewLotteryResult();
         }
 
-        public static ILotto649Scrape CreateLotto649Scrape()
+        public static ILotteryScrape CreateLotto649Scrape()
         {
-            return new Lotto649Scrape(CreateUserAgentPicker(), CreateFormatNewLotteryResult(), CreateWriteNewLottoResult());
+            return new Lotto649Scrape(CreateWebsiteScraping(), CreateFormatNewLotteryResult(),
+                CreateWriteNewLottoResult());
         }
 
         public static IWebsiteScraping CreateWebSiteScraping()
