@@ -17,7 +17,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         private readonly IWebsiteScraping _websiteScraping;
 
         /// <summary>
-        ///     Constructor uses uAgentPicker (not really) from base class, FormatNewLottery and WriteNewLottoResults to
+        ///     FormatNewLottery and WriteNewLottoResults to
         ///     handle the information returned from the scrape.
         /// </summary>
         /// <param name="websiteScraping"></param>

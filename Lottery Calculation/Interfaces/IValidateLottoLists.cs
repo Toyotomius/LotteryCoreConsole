@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
+using Newtonsoft.Json.Linq;
 
 namespace LotteryCoreConsole.Lottery_Calculation.Interfaces
 {
-    public interface IBeginLottoCalculations
+    public interface IValidateLottoLists
     {
-        Task LottoChain(string lotteryName, List<LottoData> lotto);
+        Task ValidateLotteryLists((List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo);
     }
 }

@@ -24,9 +24,9 @@ namespace LotteryCoreConsole
                 await lotto649Scrape.ScrapeLotteryAsync();
             }
 
-            while (true)
-            {
-            }
+            //while (true)
+            //{
+            //}
             // Task scheduler chain for specific lotteries.
             //SchdTask schd = new SchdTask();
             //schd.Schedule();
@@ -36,10 +36,10 @@ namespace LotteryCoreConsole
 
             //Console.ReadKey();
 
-            //(List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo = (lotteryFile, lotteryJObject);
+            (List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo = (lotteryFile, lotteryJObject);
 
-            //IBeginLottoCalculations beginCalc = Factory.CreateBeginLottoCalculations();
-            //await beginCalc.LottoChain(lotteryInfo);
+            IValidateLottoLists validateLists = Factory.CreateValidateLottoLists();
+            await validateLists.ValidateLotteryLists(lotteryInfo);
         }
     }
 }

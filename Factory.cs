@@ -4,12 +4,18 @@ using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.Lottery_Calculation.PairsCode;
 using LotteryCoreConsole.Lottery_Calculation.SinglesCode;
 using LotteryCoreConsole.Lottery_Calculation.TripletsCode;
+
 using LotteryCoreConsole.Settings;
 
 namespace LotteryCoreConsole
 {
     public static class Factory
     {
+        public static IValidateLottoLists CreateValidateLottoLists()
+        {
+            return new ValidateLottoLists(CreateBeginLottoCalculations());
+        }
+
         public static IFileOut CreateFileOut()
         {
             return new FileOut();
@@ -35,11 +41,11 @@ namespace LotteryCoreConsole
             return new MakeLottoList();
         }
 
-        internal static IBeginLottoCalculations CreateStartLottoLists()
-        {
-            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
-                                                CreateParaPairs(), CreateParaTriplets());
-        }
+        //internal static IBeginLottoCalculations CreateStartLottoLists()
+        //{
+        //    return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
+        //                                        CreateParaPairs(), CreateParaTriplets());
+        //}
 
         internal static ISetSettings SetNewSettings()
         {

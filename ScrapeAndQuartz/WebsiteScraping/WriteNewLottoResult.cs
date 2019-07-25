@@ -14,6 +14,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
     public class WriteNewLottoResult : FileOut, IWriteNewLottoResult
     {
         private string _contents = "";
+
         public event EventHandler<LottoEventArgs> NewLotteryResultsWritten;
 
         /// <summary>
