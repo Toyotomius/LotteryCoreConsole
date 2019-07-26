@@ -1,10 +1,9 @@
-﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
-using Quartz;
-using Quartz.Impl;
-using System;
+﻿using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+using Quartz;
+using Quartz.Impl;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
 {

@@ -1,10 +1,8 @@
-﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
-using HtmlAgilityPack;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+using OpenQA.Selenium.Chrome;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
@@ -35,7 +33,6 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
                 };
             Task<string> source = Task.Run(() => driver.PageSource);
 
-
             //Screenshot sh = driver.GetScreenshot();
             //sh.SaveAsFile(@"C:\Misc\Temp.jpg", ImageFormat.Png);
 
@@ -54,8 +51,8 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         }
 
         // TODO: Set date by automated scrape time. Or use a regex to parse the <script> for the latest date.
-        // TODO: Set up some scraping. Tie it into the config file for any number of websites desired. Put the results
-        // scrapped into a correct format and insert it into the appropriate json file.
+        
+        // TODO: Remember sanity checks.
 
         //TODO: Put the websites to be scraped in the settings file.
     }

@@ -8,7 +8,8 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
     public class LottoEventArgs : EventArgs
     {
-        public string Name { get; set; }
+        public string LotteryName { get; set; }
+        public string LotteryData { get; set; }
     }
 
     public class WriteNewLottoResult : FileOut, IWriteNewLottoResult
@@ -38,15 +39,15 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 
             await WriteFile(path, newFile);
             // Raises event after the writing is finished to update the singles, pairs & triplets data.
-            OnNewResultsWritten(lotteryName);
+            OnNewResultsWritten(lotteryName, newFile);
         }
 
         /// <summary>
         ///     Event to update the frequency result data.
         /// </summary>
-        protected void OnNewResultsWritten(string lotteryName)
+        protected void OnNewResultsWritten(string lotteryName, string newFile)
         {
-            NewLotteryResultsWritten?.Invoke(this, new LottoEventArgs {Name = lotteryName});
+            NewLotteryResultsWritten?.Invoke(this, new LottoEventArgs { LotteryName = lotteryName, LotteryData = newFile });
         }
     }
 }

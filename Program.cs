@@ -15,8 +15,13 @@ namespace LotteryCoreConsole
             IGetSettings set = Factory.CreateGetSettings();
             (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) =
                 await set.RetrieveSettings();
+            (List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo = (lotteryFile, lotteryJObject);
 
+            IValidateLottoLists validateLists = Factory.CreateValidateLottoLists();
+            await validateLists.ValidateLotteryLists(lotteryInfo);
 
+            // TODO: Remove delay. Just here for debugging.
+            Task.Delay(8000);
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
@@ -36,10 +41,7 @@ namespace LotteryCoreConsole
 
             //Console.ReadKey();
 
-            (List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo = (lotteryFile, lotteryJObject);
-
-            IValidateLottoLists validateLists = Factory.CreateValidateLottoLists();
-            await validateLists.ValidateLotteryLists(lotteryInfo);
+            while (true) ;
         }
     }
 }
