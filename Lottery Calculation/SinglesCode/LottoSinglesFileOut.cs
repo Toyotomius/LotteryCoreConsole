@@ -1,7 +1,6 @@
-﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 
 namespace LotteryCoreConsole.Lottery_Calculation.SinglesCode
 {

@@ -1,8 +1,7 @@
-﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
-
-using System;
+﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
@@ -17,7 +16,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 
         public async Task<string> RandomUserAgentAsync()
         {
-            string[] uAgentsArray = File.ReadAllLines($"./Data Files/useragents.txt");
+            string[] uAgentsArray = File.ReadAllLines("./Data Files/useragents.txt");
 
             Task<string> randomAgentTask = Task.FromResult(uAgentsArray[_rand.Next(uAgentsArray.Length)]);
 

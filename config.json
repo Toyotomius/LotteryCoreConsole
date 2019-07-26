@@ -5,6 +5,6 @@
   //TODO: Set up the ability to put the website in the config file for auto-scraping numbers.
   //TODO: Set up the ability to put the draw-time with the websites for auto-scraping.
   // TODO: Make the filenames not case sensitive.
-  "LotteryMasterFiles": [ "Break.json", "Lotto649.json", "Example.json", "Lotto649During.json" ],
+  "LotteryMasterFiles": ["Break.json", "Lotto649.json", "Example.json", "Lotto649During.json"],
   "ScrapeLotteryWebsites": "true"
 }

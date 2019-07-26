@@ -1,6 +1,5 @@
-﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-
-using System.IO;
+﻿using System.IO;
+using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 
 namespace LotteryCoreConsole.FileManagement
 {
@@ -10,7 +9,7 @@ namespace LotteryCoreConsole.FileManagement
 
         public void Log(string message)
         {
-            using (StreamWriter sw = new StreamWriter(_logFile, append: true))
+            using (var sw = new StreamWriter(_logFile, true))
             {
                 sw.WriteLine(message);
             }

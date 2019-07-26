@@ -38,6 +38,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
             string newFile = await newFileTask;
 
             await WriteFile(path, newFile);
+
             // Raises event after the writing is finished to update the singles, pairs & triplets data.
             OnNewResultsWritten(lotteryName, newFile);
         }
@@ -47,7 +48,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         /// </summary>
         protected void OnNewResultsWritten(string lotteryName, string newFile)
         {
-            NewLotteryResultsWritten?.Invoke(this, new LottoEventArgs { LotteryName = lotteryName, LotteryData = newFile });
+            NewLotteryResultsWritten?.Invoke(this, new LottoEventArgs {LotteryName = lotteryName, LotteryData = newFile});
         }
     }
 }

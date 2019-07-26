@@ -5,7 +5,7 @@ using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
     /// <summary>
-    /// Takes the new results, finds the draw date and formats the new file to be used.
+    ///     Takes the new results, finds the draw date and formats the new file to be used.
     /// </summary>
     public class FormatNewLotteryResult : IFormatNewLotteryResult
     {

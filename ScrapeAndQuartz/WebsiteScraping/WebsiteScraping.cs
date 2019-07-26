@@ -51,7 +51,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         }
 
         // TODO: Set date by automated scrape time. Or use a regex to parse the <script> for the latest date.
-        
+
         // TODO: Remember sanity checks.
 
         //TODO: Put the websites to be scraped in the settings file.

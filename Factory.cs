@@ -4,7 +4,6 @@ using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.Lottery_Calculation.PairsCode;
 using LotteryCoreConsole.Lottery_Calculation.SinglesCode;
 using LotteryCoreConsole.Lottery_Calculation.TripletsCode;
-
 using LotteryCoreConsole.Settings;
 
 namespace LotteryCoreConsole
@@ -40,12 +39,6 @@ namespace LotteryCoreConsole
         {
             return new MakeLottoList();
         }
-
-        //internal static IBeginLottoCalculations CreateStartLottoLists()
-        //{
-        //    return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(),
-        //                                        CreateParaPairs(), CreateParaTriplets());
-        //}
 
         internal static ISetSettings SetNewSettings()
         {

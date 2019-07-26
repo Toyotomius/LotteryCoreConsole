@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
 
 namespace LotteryCoreConsole.Lottery_Calculation.Interfaces

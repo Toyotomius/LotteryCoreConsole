@@ -25,8 +25,8 @@ namespace LotteryCoreConsole.Settings
         public async Task<(List<string> LotteryFile, List<JObject> LotteryJObject, bool scrapeWebsites)>
             ApplySettingsAsync()
         {
-            var settingsFromFileTask = _settings.ReadSettings();
-            var settingsFromFile = await settingsFromFileTask;
+            Task<JObject> settingsFromFileTask = _settings.ReadSettings();
+            JObject settingsFromFile = await settingsFromFileTask;
 
             //TODO: Check to see if a file has been added to.Ignore it if it hasn't been.
             // TODO: Clean up logfile at various points.
@@ -39,10 +39,10 @@ namespace LotteryCoreConsole.Settings
             var scrapeWebsites = settingsFromFile["ScrapeLotteryWebsites"].ToObject<bool>();
 
             // Takes each item from the array of json lottery files and adds it to a list
-            foreach (var itm in settingsFromFile["LotteryMasterFiles"]) LotteryFile.Add(itm.ToString());
+            foreach (JToken itm in settingsFromFile["LotteryMasterFiles"]) LotteryFile.Add(itm.ToString());
 
             // Descending for loop to allow for removing any files that are not present while logging such.
-            for (var i = LotteryFile.Count - 1; i >= 0; i--)
+            for (int i = LotteryFile.Count - 1; i >= 0; i--)
                 try
                 {
                     // tries to create list of json objects from the contents of the file from config
