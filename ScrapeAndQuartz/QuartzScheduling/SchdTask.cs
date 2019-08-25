@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Specialized;
-using System.Threading.Tasks;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 using Quartz;
 using Quartz.Impl;
+using System;
+using System.Collections.Specialized;
+using System.Threading.Tasks;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
 {
@@ -11,7 +11,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            ILotteryScrape lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
+            ILotteryScrape lotto649Scrape = ScrapeAndQuartzFactory.CreateLotto649Scrape();
             Console.WriteLine($"{DateTime.Now}  : Starting Scrape");
             await lotto649Scrape.ScrapeLotteryAsync();
         }

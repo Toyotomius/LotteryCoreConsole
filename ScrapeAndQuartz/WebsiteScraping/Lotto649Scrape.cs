@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using HtmlAgilityPack;
+using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HtmlAgilityPack;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
@@ -40,7 +40,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         public async Task ScrapeLotteryAsync()
         {
             var lotteryUrl = "http://localhost:8000/test.htm";
-            string source = await _websiteScraping.RetrievePageSource(lotteryUrl).ConfigureAwait(false);
+            var source = await _websiteScraping.RetrievePageSource(lotteryUrl).ConfigureAwait(false);
             var lotteryWebpage = new HtmlDocument();
             lotteryWebpage.LoadHtml(source);
 
@@ -48,26 +48,25 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
                 lotteryWebpage.DocumentNode.SelectNodes("//div[@class='panel-group category-accordion-Lotto649']");
             HtmlNode lotto649DrawDate =
                 lotteryWebpage.DocumentNode.SelectSingleNode("//script[contains(.,'gameId: \"Lotto649\"')]");
-            int drawdateIndex = lotto649DrawDate.InnerHtml.LastIndexOf("drawDatesData");
-            List<string> newLottoNumList = new List<string>();
+            var drawdateIndex = lotto649DrawDate.InnerHtml.LastIndexOf("drawDatesData");
+            var newLottoNumList = new List<string>();
 
             // Create a temporary list to store the lottery numbers.
-            List<string> tempList = lotto649.Descendants("li").Select(x => x.InnerText).ToList();
+            var tempList = lotto649.Descendants("li").Select(x => x.InnerText).ToList();
 
             // Temporary list is then used to remove any leading 0s the website may have used. Json doesn't like leading 0s on numbers (fuck 'im).
-            foreach (string itm in tempList)
+            foreach (var itm in tempList)
             {
-                string newItm = itm.Replace(itm, itm.TrimStart(new[] {'0'}));
+                var newItm = itm.Replace(itm, itm.TrimStart(new[] { '0' }));
                 newLottoNumList.Add(newItm);
             }
 
-            string[] lotto649DrawNumsArray = newLottoNumList.ToArray();
-            string lotto649DrawNums = string.Join(", ", lotto649DrawNumsArray);
+            var lotto649DrawNums = string.Join(", ", newLottoNumList);
 
-            string newResults = await _formatNewLotteryResult.FormatResult(lotto649DrawNums);
+            var newResults = await _formatNewLotteryResult.FormatResult(lotto649DrawNums);
 
             _writeNewResult.NewLotteryResultsWritten += _afterLottoWritten.OnResultsWritten;
-            Task writeTask = Task.Run(() => _writeNewResult.WriteNewResults("Lotto649", newResults));
+            var writeTask = Task.Run(() => _writeNewResult.WriteNewResults("Lotto649", newResults));
             await writeTask;
         }
     }

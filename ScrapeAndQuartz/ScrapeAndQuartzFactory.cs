@@ -1,27 +1,22 @@
-﻿using System;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
+﻿using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping;
 using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+using System;
 
 namespace LotteryCoreConsole.ScrapeAndQuartz
 {
     /// <summary>
     ///     Factory for creating all instances needed in the webscraping / Quartz portion of the program.
     /// </summary>
-    public static class SCrapeAndQuartzFactory
+    public static class ScrapeAndQuartzFactory
     {
-        public static IBeginRecalculation CreateBeginRecalculation()
-        {
-            return new BeginRecalculation(Factory.CreateValidateLottoLists());
-        }
-
         public static IAfterLottoWritten CreateAfterLottoWritten()
         {
             return new AfterLottoWritten(CreateBeginRecalculation());
         }
 
-        public static IWebsiteScraping CreateWebsiteScraping()
+        public static IBeginRecalculation CreateBeginRecalculation()
         {
-            return new WebsiteScraping.WebsiteScraping(CreateUserAgentPicker());
+            return new BeginRecalculation(Factory.CreateValidateLottoLists());
         }
 
         public static IFormatNewLotteryResult CreateFormatNewLotteryResult()
@@ -33,6 +28,11 @@ namespace LotteryCoreConsole.ScrapeAndQuartz
         {
             return new Lotto649Scrape(CreateWebsiteScraping(), CreateFormatNewLotteryResult(),
                 CreateWriteNewLottoResult(), CreateAfterLottoWritten());
+        }
+
+        public static IWebsiteScraping CreateWebsiteScraping()
+        {
+            return new WebsiteScraping.WebsiteScraping(CreateUserAgentPicker());
         }
 
         public static IWebsiteScraping CreateWebSiteScraping()

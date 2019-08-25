@@ -10,14 +10,14 @@ namespace LotteryCoreConsole
 {
     public static class Factory
     {
-        public static IValidateLottoLists CreateValidateLottoLists()
-        {
-            return new ValidateLottoLists(CreateBeginLottoCalculations());
-        }
-
         public static IFileOut CreateFileOut()
         {
             return new FileOut();
+        }
+
+        public static IValidateLottoLists CreateValidateLottoLists()
+        {
+            return new ValidateLottoLists(CreateBeginLottoCalculations());
         }
 
         internal static IBeginLottoCalculations CreateBeginLottoCalculations()

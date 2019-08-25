@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using LotteryCoreConsole.Lottery_Calculation.Interfaces;
-using LotteryCoreConsole.ScrapeAndQuartz;
-using LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces;
+﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
+using LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.Lotto649;
 using Newtonsoft.Json.Linq;
+using Quartz;
+using Quartz.Impl;
+using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Threading.Tasks;
 
 namespace LotteryCoreConsole
 {
@@ -13,7 +15,7 @@ namespace LotteryCoreConsole
         private static async Task Main()
         {
             IGetSettings set = Factory.CreateGetSettings();
-            (List<string> lotteryFile, List<JObject> lotteryJObject, bool scrapeWebsites) =
+            (List<string> lotteryFile, List<JObject> lotteryJObject, var scrapeWebsites) =
                 await set.RetrieveSettings();
             (List<string> LotteryFile, List<JObject> LotteryJObject) lotteryInfo = (lotteryFile, lotteryJObject);
 
@@ -21,27 +23,31 @@ namespace LotteryCoreConsole
             await validateLists.ValidateLotteryLists(lotteryInfo);
 
             // TODO: Remove delay. Just here for debugging.
-            Task.Delay(8000);
+            await Task.Delay(8000);
+
+            // If true: Uses Quartz.net to schedule tasks.
+            // TODO: Check against settings file to see which website scraping tasks need to be scheduled.
             if (scrapeWebsites)
             {
                 Console.WriteLine("ScrapeWebsites = True");
-                ILotteryScrape lotto649Scrape = SCrapeAndQuartzFactory.CreateLotto649Scrape();
-                await lotto649Scrape.ScrapeLotteryAsync();
-            }
 
-            //while (true)
-            //{
-            //}
-            // Task scheduler chain for specific lotteries.
-            //SchdTask schd = new SchdTask();
-            //schd.Schedule();
-            //while (true)
-            //{
-            //}
+                var props = new NameValueCollection
+                {
+                    {"quartz.serializer.type", "binary" }
+                };
+                var quartzFactory = new StdSchedulerFactory(props);
+
+                IScheduler scheduler = await quartzFactory.GetScheduler();
+                await scheduler.Start();
+
+                await Lotto649Schedule.Lotto649Scheduler(scheduler);
+            }
 
             //Console.ReadKey();
 
-            while (true) ;
+            while (true)
+            {
+            }
         }
     }
 }
