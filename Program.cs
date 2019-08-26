@@ -1,5 +1,6 @@
 ﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.Lotto649;
+using LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.LottoMax;
 using Newtonsoft.Json.Linq;
 using Quartz;
 using Quartz.Impl;
@@ -41,6 +42,7 @@ namespace LotteryCoreConsole
                 await scheduler.Start();
 
                 await Lotto649Schedule.Lotto649Scheduler(scheduler);
+                await LottoMaxSchedule.LottoMaxScheduler(scheduler);
             }
 
             //Console.ReadKey();
