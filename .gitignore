@@ -72,3 +72,9 @@ dkms.conf
 /Old Main 4-25-2019.txt
 *.ruleset
 
+/.cr/personal/Editor/Navigation/Markers.xml
+/.cr/personal/Editor/Painting/Structural Highlighting.xml
+/.cr/personal/Editor/Painting/Member Icons.xml
+/.cr/personal/Editor/Painting/Code Metrics.xml
+/.cr/personal/Editor/IntelliRush.xml
+/.cr/personal/IDE/Shortcuts.xml
