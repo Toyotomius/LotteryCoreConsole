@@ -30,6 +30,12 @@ namespace LotteryCoreConsole.ScrapeAndQuartz
                 CreateWriteNewLottoResult(), CreateAfterLottoWritten());
         }
 
+        public static ILotteryScrape CreateLottoMaxScrape()
+        {
+            return new LottoMaxScrape(CreateWebsiteScraping(), CreateFormatNewLotteryResult(),
+                CreateWriteNewLottoResult(), CreateAfterLottoWritten());
+        }
+
         public static IWebsiteScraping CreateWebsiteScraping()
         {
             return new WebsiteScraping.WebsiteScraping(CreateUserAgentPicker());

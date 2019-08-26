@@ -10,7 +10,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
     ///     Scrapes the Atlantic Lottery Corporation Website @ https://www.alc.ca/content/alc/en/winning-numbers.html for the
     ///     winning Lotto649 numbers. Draws every Wed and Sat.
     /// </summary>
-    public class Lotto649Scrape : ILotteryScrape
+    public class LottoMaxScrape : ILotteryScrape
     {
         private readonly IAfterLottoWritten _afterLottoWritten;
         private readonly IFormatNewLotteryResult _formatNewLotteryResult;
@@ -24,7 +24,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         /// <param name="websiteScraping"></param>
         /// <param name="formatNewLotteryResult"></param>
         /// <param name="writeNewLottoResult"></param>
-        public Lotto649Scrape(IWebsiteScraping websiteScraping, IFormatNewLotteryResult formatNewLotteryResult,
+        public LottoMaxScrape(IWebsiteScraping websiteScraping, IFormatNewLotteryResult formatNewLotteryResult,
             IWriteNewLottoResult writeNewLottoResult, IAfterLottoWritten afterLottoWritten)
         {
             _websiteScraping = websiteScraping;
@@ -45,7 +45,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
             lotteryWebpage.LoadHtml(source);
 
             HtmlNodeCollection lotto649 =
-                lotteryWebpage.DocumentNode.SelectNodes("//div[@class='panel-group category-accordion-Lotto649']");
+                lotteryWebpage.DocumentNode.SelectNodes("//div[@class='panel-group category-accordion-LottoMax']");
 
             var newLottoNumList = new List<string>();
 
