@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
@@ -18,7 +19,8 @@ namespace LotteryCoreConsole.Lottery_Calculation
                 _lottoData.Add(new LottoData
                 {
                     Date = lotteryData[lotteryName][i]["Date"].ToString(),
-                    Numbers = lotteryData[lotteryName][i]["Numbers"].Select(x => (int) x).ToArray()
+                    Numbers = lotteryData[lotteryName][i]["Numbers"].Select(x => (int)x).ToArray(),
+                    Bonus = lotteryData[lotteryName][i]["Bonus"].ToObject<int>()
                 });
 
             return _lottoData;

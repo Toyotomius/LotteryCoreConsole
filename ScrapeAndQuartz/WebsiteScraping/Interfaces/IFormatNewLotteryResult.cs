@@ -4,6 +4,6 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping.Interfaces
 {
     public interface IFormatNewLotteryResult
     {
-        Task<string> FormatResult(string winningNumbers);
+        Task<string> FormatResult(string winningNumbers, string bonusNumber);
     }
 }

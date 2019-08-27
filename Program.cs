@@ -30,6 +30,9 @@ namespace LotteryCoreConsole
             // TODO: Check against settings file to see which website scraping tasks need to be scheduled.
             if (scrapeWebsites)
             {
+                // TODO: Remove below comments. There for testing only.
+                //var lottoScrape = ScrapeAndQuartz.ScrapeAndQuartzFactory.CreateLotto649Scrape();
+                //await lottoScrape.ScrapeLotteryAsync();
                 Console.WriteLine("ScrapeWebsites = True");
 
                 var props = new NameValueCollection

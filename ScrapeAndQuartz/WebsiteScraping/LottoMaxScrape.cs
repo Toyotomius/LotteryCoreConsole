@@ -34,7 +34,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
         }
 
         /// <summary>
-        ///     Scrapes the winning results for Lotto649 with help from base class.
+        ///     Scrapes the winning results for LottoMax with help from base class.
         /// </summary>
         /// <returns></returns>
         public async Task ScrapeLotteryAsync()
@@ -44,13 +44,13 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
             var lotteryWebpage = new HtmlDocument();
             lotteryWebpage.LoadHtml(source);
 
-            HtmlNodeCollection lotto649 =
+            HtmlNodeCollection lottoMax =
                 lotteryWebpage.DocumentNode.SelectNodes("//div[@class='panel-group category-accordion-LottoMax']");
 
             var newLottoNumList = new List<string>();
 
             // Create a temporary list to store the lottery numbers.
-            var tempList = lotto649.Descendants("li").Select(x => x.InnerText).ToList();
+            var tempList = lottoMax.Descendants("li").Select(x => x.InnerText).ToList();
 
             // Temporary list is then used to remove any leading 0s the website may have used. Json doesn't like leading 0s on numbers (fuck 'im).
             foreach (var itm in tempList)
@@ -58,13 +58,15 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
                 var newItm = itm.Replace(itm, itm.TrimStart(new[] { '0' }));
                 newLottoNumList.Add(newItm);
             }
+            var bonusNum = tempList[7];
+            tempList.RemoveAt(7);
 
-            var lotto649DrawNums = string.Join(", ", newLottoNumList);
+            var lottoMaxDrawNums = string.Join(", ", newLottoNumList);
 
-            var newResults = await _formatNewLotteryResult.FormatResult(lotto649DrawNums);
+            var newResults = await _formatNewLotteryResult.FormatResult(lottoMaxDrawNums, bonusNum);
 
             _writeNewResult.NewLotteryResultsWritten += _afterLottoWritten.OnResultsWritten;
-            var writeTask = Task.Run(() => _writeNewResult.WriteNewResults("Lotto649", newResults));
+            var writeTask = Task.Run(() => _writeNewResult.WriteNewResults("LottoMax", newResults));
             await writeTask;
         }
     }

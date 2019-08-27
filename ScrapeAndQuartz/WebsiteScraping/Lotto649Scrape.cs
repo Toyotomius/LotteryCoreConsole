@@ -53,15 +53,19 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
             var tempList = lotto649.Descendants("li").Select(x => x.InnerText).ToList();
 
             // Temporary list is then used to remove any leading 0s the website may have used. Json doesn't like leading 0s on numbers (fuck 'im).
+            // Also removes the last number (bonus number) and separates it out into a new variable.
+
             foreach (var itm in tempList)
             {
                 var newItm = itm.Replace(itm, itm.TrimStart(new[] { '0' }));
                 newLottoNumList.Add(newItm);
             }
+            var bonusNum = newLottoNumList[6];
+            newLottoNumList.RemoveAt(6);
 
             var lotto649DrawNums = string.Join(", ", newLottoNumList);
 
-            var newResults = await _formatNewLotteryResult.FormatResult(lotto649DrawNums);
+            var newResults = await _formatNewLotteryResult.FormatResult(lotto649DrawNums, bonusNum);
 
             _writeNewResult.NewLotteryResultsWritten += _afterLottoWritten.OnResultsWritten;
             var writeTask = Task.Run(() => _writeNewResult.WriteNewResults("Lotto649", newResults));

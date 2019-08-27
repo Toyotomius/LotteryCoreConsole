@@ -78,3 +78,5 @@ dkms.conf
 /.cr/personal/Editor/Painting/Code Metrics.xml
 /.cr/personal/Editor/IntelliRush.xml
 /.cr/personal/IDE/Shortcuts.xml
+*.bkup
+/Lotto649Bonus.json
