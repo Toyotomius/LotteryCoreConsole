@@ -1,0 +1,5882 @@
+[
+  {
+    "Second": 43,
+    "First": 20,
+    "Frequency": 73
+  },
+  {
+    "Second": 46,
+    "First": 26,
+    "Frequency": 70
+  },
+  {
+    "Second": 38,
+    "First": 5,
+    "Frequency": 66
+  },
+  {
+    "Second": 43,
+    "First": 12,
+    "Frequency": 66
+  },
+  {
+    "Second": 21,
+    "First": 9,
+    "Frequency": 66
+  },
+  {
+    "Second": 45,
+    "First": 40,
+    "Frequency": 66
+  },
+  {
+    "Second": 26,
+    "First": 20,
+    "Frequency": 65
+  },
+  {
+    "Second": 31,
+    "First": 10,
+    "Frequency": 65
+  },
+  {
+    "Second": 49,
+    "First": 31,
+    "Frequency": 65
+  },
+  {
+    "Second": 49,
+    "First": 33,
+    "Frequency": 64
+  },
+  {
+    "Second": 38,
+    "First": 23,
+    "Frequency": 64
+  },
+  {
+    "Second": 47,
+    "First": 23,
+    "Frequency": 64
+  },
+  {
+    "Second": 45,
+    "First": 25,
+    "Frequency": 64
+  },
+  {
+    "Second": 42,
+    "First": 41,
+    "Frequency": 63
+  },
+  {
+    "Second": 45,
+    "First": 5,
+    "Frequency": 63
+  },
+  {
+    "Second": 37,
+    "First": 9,
+    "Frequency": 63
+  },
+  {
+    "Second": 40,
+    "First": 3,
+    "Frequency": 63
+  },
+  {
+    "Second": 38,
+    "First": 10,
+    "Frequency": 62
+  },
+  {
+    "Second": 45,
+    "First": 38,
+    "Frequency": 62
+  },
+  {
+    "Second": 33,
+    "First": 23,
+    "Frequency": 62
+  },
+  {
+    "Second": 33,
+    "First": 31,
+    "Frequency": 62
+  },
+  {
+    "Second": 38,
+    "First": 7,
+    "Frequency": 62
+  },
+  {
+    "Second": 8,
+    "First": 3,
+    "Frequency": 61
+  },
+  {
+    "Second": 43,
+    "First": 40,
+    "Frequency": 61
+  },
+  {
+    "Second": 31,
+    "First": 5,
+    "Frequency": 61
+  },
+  {
+    "Second": 43,
+    "First": 34,
+    "Frequency": 61
+  },
+  {
+    "Second": 32,
+    "First": 19,
+    "Frequency": 61
+  },
+  {
+    "Second": 27,
+    "First": 7,
+    "Frequency": 61
+  },
+  {
+    "Second": 34,
+    "First": 8,
+    "Frequency": 61
+  },
+  {
+    "Second": 23,
+    "First": 4,
+    "Frequency": 61
+  },
+  {
+    "Second": 45,
+    "First": 23,
+    "Frequency": 61
+  },
+  {
+    "Second": 22,
+    "First": 8,
+    "Frequency": 61
+  },
+  {
+    "Second": 22,
+    "First": 9,
+    "Frequency": 61
+  },
+  {
+    "Second": 20,
+    "First": 17,
+    "Frequency": 61
+  },
+  {
+    "Second": 46,
+    "First": 24,
+    "Frequency": 61
+  },
+  {
+    "Second": 45,
+    "First": 29,
+    "Frequency": 61
+  },
+  {
+    "Second": 43,
+    "First": 38,
+    "Frequency": 60
+  },
+  {
+    "Second": 38,
+    "First": 21,
+    "Frequency": 60
+  },
+  {
+    "Second": 44,
+    "First": 34,
+    "Frequency": 60
+  },
+  {
+    "Second": 38,
+    "First": 15,
+    "Frequency": 60
+  },
+  {
+    "Second": 38,
+    "First": 31,
+    "Frequency": 60
+  },
+  {
+    "Second": 48,
+    "First": 46,
+    "Frequency": 60
+  },
+  {
+    "Second": 47,
+    "First": 34,
+    "Frequency": 60
+  },
+  {
+    "Second": 42,
+    "First": 40,
+    "Frequency": 60
+  },
+  {
+    "Second": 47,
+    "First": 40,
+    "Frequency": 60
+  },
+  {
+    "Second": 34,
+    "First": 26,
+    "Frequency": 60
+  },
+  {
+    "Second": 34,
+    "First": 11,
+    "Frequency": 60
+  },
+  {
+    "Second": 36,
+    "First": 19,
+    "Frequency": 60
+  },
+  {
+    "Second": 47,
+    "First": 3,
+    "Frequency": 60
+  },
+  {
+    "Second": 12,
+    "First": 8,
+    "Frequency": 60
+  },
+  {
+    "Second": 39,
+    "First": 20,
+    "Frequency": 60
+  },
+  {
+    "Second": 33,
+    "First": 29,
+    "Frequency": 60
+  },
+  {
+    "Second": 42,
+    "First": 21,
+    "Frequency": 59
+  },
+  {
+    "Second": 19,
+    "First": 12,
+    "Frequency": 59
+  },
+  {
+    "Second": 42,
+    "First": 20,
+    "Frequency": 59
+  },
+  {
+    "Second": 27,
+    "First": 9,
+    "Frequency": 59
+  },
+  {
+    "Second": 45,
+    "First": 27,
+    "Frequency": 59
+  },
+  {
+    "Second": 40,
+    "First": 8,
+    "Frequency": 59
+  },
+  {
+    "Second": 31,
+    "First": 15,
+    "Frequency": 59
+  },
+  {
+    "Second": 31,
+    "First": 18,
+    "Frequency": 58
+  },
+  {
+    "Second": 28,
+    "First": 9,
+    "Frequency": 58
+  },
+  {
+    "Second": 46,
+    "First": 4,
+    "Frequency": 58
+  },
+  {
+    "Second": 5,
+    "First": 3,
+    "Frequency": 58
+  },
+  {
+    "Second": 38,
+    "First": 34,
+    "Frequency": 58
+  },
+  {
+    "Second": 49,
+    "First": 43,
+    "Frequency": 58
+  },
+  {
+    "Second": 47,
+    "First": 31,
+    "Frequency": 58
+  },
+  {
+    "Second": 47,
+    "First": 46,
+    "Frequency": 58
+  },
+  {
+    "Second": 46,
+    "First": 45,
+    "Frequency": 58
+  },
+  {
+    "Second": 27,
+    "First": 13,
+    "Frequency": 58
+  },
+  {
+    "Second": 27,
+    "First": 11,
+    "Frequency": 58
+  },
+  {
+    "Second": 31,
+    "First": 13,
+    "Frequency": 58
+  },
+  {
+    "Second": 27,
+    "First": 1,
+    "Frequency": 58
+  },
+  {
+    "Second": 31,
+    "First": 3,
+    "Frequency": 58
+  },
+  {
+    "Second": 44,
+    "First": 2,
+    "Frequency": 58
+  },
+  {
+    "Second": 49,
+    "First": 23,
+    "Frequency": 58
+  },
+  {
+    "Second": 31,
+    "First": 2,
+    "Frequency": 58
+  },
+  {
+    "Second": 16,
+    "First": 3,
+    "Frequency": 58
+  },
+  {
+    "Second": 42,
+    "First": 9,
+    "Frequency": 58
+  },
+  {
+    "Second": 24,
+    "First": 13,
+    "Frequency": 58
+  },
+  {
+    "Second": 41,
+    "First": 4,
+    "Frequency": 57
+  },
+  {
+    "Second": 48,
+    "First": 4,
+    "Frequency": 57
+  },
+  {
+    "Second": 31,
+    "First": 28,
+    "Frequency": 57
+  },
+  {
+    "Second": 30,
+    "First": 4,
+    "Frequency": 57
+  },
+  {
+    "Second": 29,
+    "First": 19,
+    "Frequency": 57
+  },
+  {
+    "Second": 31,
+    "First": 21,
+    "Frequency": 57
+  },
+  {
+    "Second": 35,
+    "First": 24,
+    "Frequency": 57
+  },
+  {
+    "Second": 19,
+    "First": 10,
+    "Frequency": 57
+  },
+  {
+    "Second": 41,
+    "First": 15,
+    "Frequency": 57
+  },
+  {
+    "Second": 40,
+    "First": 32,
+    "Frequency": 57
+  },
+  {
+    "Second": 6,
+    "First": 5,
+    "Frequency": 57
+  },
+  {
+    "Second": 49,
+    "First": 41,
+    "Frequency": 57
+  },
+  {
+    "Second": 34,
+    "First": 23,
+    "Frequency": 57
+  },
+  {
+    "Second": 43,
+    "First": 41,
+    "Frequency": 57
+  },
+  {
+    "Second": 41,
+    "First": 10,
+    "Frequency": 57
+  },
+  {
+    "Second": 34,
+    "First": 32,
+    "Frequency": 57
+  },
+  {
+    "Second": 20,
+    "First": 11,
+    "Frequency": 57
+  },
+  {
+    "Second": 45,
+    "First": 4,
+    "Frequency": 57
+  },
+  {
+    "Second": 43,
+    "First": 30,
+    "Frequency": 57
+  },
+  {
+    "Second": 37,
+    "First": 7,
+    "Frequency": 57
+  },
+  {
+    "Second": 31,
+    "First": 20,
+    "Frequency": 57
+  },
+  {
+    "Second": 46,
+    "First": 11,
+    "Frequency": 57
+  },
+  {
+    "Second": 46,
+    "First": 13,
+    "Frequency": 57
+  },
+  {
+    "Second": 48,
+    "First": 40,
+    "Frequency": 57
+  },
+  {
+    "Second": 47,
+    "First": 36,
+    "Frequency": 57
+  },
+  {
+    "Second": 42,
+    "First": 2,
+    "Frequency": 57
+  },
+  {
+    "Second": 44,
+    "First": 40,
+    "Frequency": 57
+  },
+  {
+    "Second": 36,
+    "First": 4,
+    "Frequency": 57
+  },
+  {
+    "Second": 40,
+    "First": 7,
+    "Frequency": 57
+  },
+  {
+    "Second": 41,
+    "First": 2,
+    "Frequency": 57
+  },
+  {
+    "Second": 46,
+    "First": 28,
+    "Frequency": 57
+  },
+  {
+    "Second": 40,
+    "First": 27,
+    "Frequency": 57
+  },
+  {
+    "Second": 25,
+    "First": 2,
+    "Frequency": 56
+  },
+  {
+    "Second": 35,
+    "First": 19,
+    "Frequency": 56
+  },
+  {
+    "Second": 37,
+    "First": 8,
+    "Frequency": 56
+  },
+  {
+    "Second": 37,
+    "First": 10,
+    "Frequency": 56
+  },
+  {
+    "Second": 44,
+    "First": 30,
+    "Frequency": 56
+  },
+  {
+    "Second": 41,
+    "First": 24,
+    "Frequency": 56
+  },
+  {
+    "Second": 49,
+    "First": 15,
+    "Frequency": 56
+  },
+  {
+    "Second": 33,
+    "First": 4,
+    "Frequency": 56
+  },
+  {
+    "Second": 45,
+    "First": 21,
+    "Frequency": 56
+  },
+  {
+    "Second": 27,
+    "First": 23,
+    "Frequency": 56
+  },
+  {
+    "Second": 27,
+    "First": 6,
+    "Frequency": 56
+  },
+  {
+    "Second": 37,
+    "First": 30,
+    "Frequency": 56
+  },
+  {
+    "Second": 47,
+    "First": 12,
+    "Frequency": 56
+  },
+  {
+    "Second": 32,
+    "First": 7,
+    "Frequency": 56
+  },
+  {
+    "Second": 22,
+    "First": 20,
+    "Frequency": 56
+  },
+  {
+    "Second": 45,
+    "First": 9,
+    "Frequency": 56
+  },
+  {
+    "Second": 42,
+    "First": 22,
+    "Frequency": 56
+  },
+  {
+    "Second": 25,
+    "First": 4,
+    "Frequency": 56
+  },
+  {
+    "Second": 47,
+    "First": 10,
+    "Frequency": 56
+  },
+  {
+    "Second": 48,
+    "First": 7,
+    "Frequency": 56
+  },
+  {
+    "Second": 49,
+    "First": 39,
+    "Frequency": 56
+  },
+  {
+    "Second": 44,
+    "First": 1,
+    "Frequency": 56
+  },
+  {
+    "Second": 34,
+    "First": 18,
+    "Frequency": 56
+  },
+  {
+    "Second": 45,
+    "First": 36,
+    "Frequency": 56
+  },
+  {
+    "Second": 31,
+    "First": 24,
+    "Frequency": 56
+  },
+  {
+    "Second": 34,
+    "First": 6,
+    "Frequency": 56
+  },
+  {
+    "Second": 36,
+    "First": 25,
+    "Frequency": 56
+  },
+  {
+    "Second": 44,
+    "First": 20,
+    "Frequency": 56
+  },
+  {
+    "Second": 40,
+    "First": 22,
+    "Frequency": 56
+  },
+  {
+    "Second": 39,
+    "First": 8,
+    "Frequency": 56
+  },
+  {
+    "Second": 12,
+    "First": 2,
+    "Frequency": 56
+  },
+  {
+    "Second": 47,
+    "First": 2,
+    "Frequency": 56
+  },
+  {
+    "Second": 40,
+    "First": 17,
+    "Frequency": 55
+  },
+  {
+    "Second": 31,
+    "First": 4,
+    "Frequency": 55
+  },
+  {
+    "Second": 34,
+    "First": 31,
+    "Frequency": 55
+  },
+  {
+    "Second": 41,
+    "First": 34,
+    "Frequency": 55
+  },
+  {
+    "Second": 33,
+    "First": 3,
+    "Frequency": 55
+  },
+  {
+    "Second": 46,
+    "First": 21,
+    "Frequency": 55
+  },
+  {
+    "Second": 37,
+    "First": 5,
+    "Frequency": 55
+  },
+  {
+    "Second": 37,
+    "First": 12,
+    "Frequency": 55
+  },
+  {
+    "Second": 45,
+    "First": 12,
+    "Frequency": 55
+  },
+  {
+    "Second": 47,
+    "First": 38,
+    "Frequency": 55
+  },
+  {
+    "Second": 47,
+    "First": 35,
+    "Frequency": 55
+  },
+  {
+    "Second": 46,
+    "First": 3,
+    "Frequency": 55
+  },
+  {
+    "Second": 19,
+    "First": 16,
+    "Frequency": 55
+  },
+  {
+    "Second": 44,
+    "First": 32,
+    "Frequency": 55
+  },
+  {
+    "Second": 49,
+    "First": 37,
+    "Frequency": 55
+  },
+  {
+    "Second": 39,
+    "First": 32,
+    "Frequency": 55
+  },
+  {
+    "Second": 47,
+    "First": 27,
+    "Frequency": 55
+  },
+  {
+    "Second": 25,
+    "First": 11,
+    "Frequency": 55
+  },
+  {
+    "Second": 31,
+    "First": 6,
+    "Frequency": 55
+  },
+  {
+    "Second": 27,
+    "First": 15,
+    "Frequency": 55
+  },
+  {
+    "Second": 37,
+    "First": 29,
+    "Frequency": 55
+  },
+  {
+    "Second": 46,
+    "First": 37,
+    "Frequency": 55
+  },
+  {
+    "Second": 9,
+    "First": 7,
+    "Frequency": 55
+  },
+  {
+    "Second": 36,
+    "First": 34,
+    "Frequency": 55
+  },
+  {
+    "Second": 17,
+    "First": 9,
+    "Frequency": 55
+  },
+  {
+    "Second": 40,
+    "First": 23,
+    "Frequency": 55
+  },
+  {
+    "Second": 48,
+    "First": 9,
+    "Frequency": 55
+  },
+  {
+    "Second": 38,
+    "First": 9,
+    "Frequency": 55
+  },
+  {
+    "Second": 36,
+    "First": 31,
+    "Frequency": 55
+  },
+  {
+    "Second": 46,
+    "First": 40,
+    "Frequency": 55
+  },
+  {
+    "Second": 45,
+    "First": 39,
+    "Frequency": 55
+  },
+  {
+    "Second": 34,
+    "First": 30,
+    "Frequency": 55
+  },
+  {
+    "Second": 46,
+    "First": 9,
+    "Frequency": 55
+  },
+  {
+    "Second": 36,
+    "First": 20,
+    "Frequency": 55
+  },
+  {
+    "Second": 27,
+    "First": 20,
+    "Frequency": 55
+  },
+  {
+    "Second": 20,
+    "First": 3,
+    "Frequency": 54
+  },
+  {
+    "Second": 48,
+    "First": 34,
+    "Frequency": 54
+  },
+  {
+    "Second": 31,
+    "First": 14,
+    "Frequency": 54
+  },
+  {
+    "Second": 48,
+    "First": 3,
+    "Frequency": 54
+  },
+  {
+    "Second": 49,
+    "First": 2,
+    "Frequency": 54
+  },
+  {
+    "Second": 31,
+    "First": 8,
+    "Frequency": 54
+  },
+  {
+    "Second": 19,
+    "First": 9,
+    "Frequency": 54
+  },
+  {
+    "Second": 22,
+    "First": 4,
+    "Frequency": 54
+  },
+  {
+    "Second": 46,
+    "First": 27,
+    "Frequency": 54
+  },
+  {
+    "Second": 34,
+    "First": 5,
+    "Frequency": 54
+  },
+  {
+    "Second": 3,
+    "First": 1,
+    "Frequency": 54
+  },
+  {
+    "Second": 39,
+    "First": 10,
+    "Frequency": 54
+  },
+  {
+    "Second": 44,
+    "First": 38,
+    "Frequency": 54
+  },
+  {
+    "Second": 45,
+    "First": 31,
+    "Frequency": 54
+  },
+  {
+    "Second": 47,
+    "First": 41,
+    "Frequency": 54
+  },
+  {
+    "Second": 47,
+    "First": 21,
+    "Frequency": 54
+  },
+  {
+    "Second": 49,
+    "First": 30,
+    "Frequency": 54
+  },
+  {
+    "Second": 20,
+    "First": 9,
+    "Frequency": 54
+  },
+  {
+    "Second": 42,
+    "First": 38,
+    "Frequency": 54
+  },
+  {
+    "Second": 45,
+    "First": 19,
+    "Frequency": 54
+  },
+  {
+    "Second": 41,
+    "First": 19,
+    "Frequency": 54
+  },
+  {
+    "Second": 23,
+    "First": 10,
+    "Frequency": 54
+  },
+  {
+    "Second": 18,
+    "First": 7,
+    "Frequency": 54
+  },
+  {
+    "Second": 20,
+    "First": 6,
+    "Frequency": 54
+  },
+  {
+    "Second": 45,
+    "First": 20,
+    "Frequency": 54
+  },
+  {
+    "Second": 21,
+    "First": 18,
+    "Frequency": 54
+  },
+  {
+    "Second": 29,
+    "First": 11,
+    "Frequency": 54
+  },
+  {
+    "Second": 45,
+    "First": 1,
+    "Frequency": 54
+  },
+  {
+    "Second": 23,
+    "First": 13,
+    "Frequency": 54
+  },
+  {
+    "Second": 23,
+    "First": 18,
+    "Frequency": 54
+  },
+  {
+    "Second": 49,
+    "First": 9,
+    "Frequency": 54
+  },
+  {
+    "Second": 44,
+    "First": 17,
+    "Frequency": 54
+  },
+  {
+    "Second": 41,
+    "First": 27,
+    "Frequency": 54
+  },
+  {
+    "Second": 43,
+    "First": 8,
+    "Frequency": 54
+  },
+  {
+    "Second": 37,
+    "First": 26,
+    "Frequency": 54
+  },
+  {
+    "Second": 8,
+    "First": 7,
+    "Frequency": 53
+  },
+  {
+    "Second": 40,
+    "First": 25,
+    "Frequency": 53
+  },
+  {
+    "Second": 14,
+    "First": 4,
+    "Frequency": 53
+  },
+  {
+    "Second": 48,
+    "First": 35,
+    "Frequency": 53
+  },
+  {
+    "Second": 46,
+    "First": 5,
+    "Frequency": 53
+  },
+  {
+    "Second": 29,
+    "First": 21,
+    "Frequency": 53
+  },
+  {
+    "Second": 33,
+    "First": 26,
+    "Frequency": 53
+  },
+  {
+    "Second": 45,
+    "First": 41,
+    "Frequency": 53
+  },
+  {
+    "Second": 47,
+    "First": 29,
+    "Frequency": 53
+  },
+  {
+    "Second": 38,
+    "First": 4,
+    "Frequency": 53
+  },
+  {
+    "Second": 35,
+    "First": 32,
+    "Frequency": 53
+  },
+  {
+    "Second": 47,
+    "First": 32,
+    "Frequency": 53
+  },
+  {
+    "Second": 43,
+    "First": 26,
+    "Frequency": 53
+  },
+  {
+    "Second": 29,
+    "First": 12,
+    "Frequency": 53
+  },
+  {
+    "Second": 26,
+    "First": 18,
+    "Frequency": 53
+  },
+  {
+    "Second": 23,
+    "First": 20,
+    "Frequency": 53
+  },
+  {
+    "Second": 43,
+    "First": 21,
+    "Frequency": 53
+  },
+  {
+    "Second": 33,
+    "First": 30,
+    "Frequency": 53
+  },
+  {
+    "Second": 43,
+    "First": 37,
+    "Frequency": 53
+  },
+  {
+    "Second": 36,
+    "First": 12,
+    "Frequency": 53
+  },
+  {
+    "Second": 31,
+    "First": 27,
+    "Frequency": 53
+  },
+  {
+    "Second": 42,
+    "First": 27,
+    "Frequency": 53
+  },
+  {
+    "Second": 40,
+    "First": 13,
+    "Frequency": 53
+  },
+  {
+    "Second": 20,
+    "First": 16,
+    "Frequency": 53
+  },
+  {
+    "Second": 43,
+    "First": 31,
+    "Frequency": 53
+  },
+  {
+    "Second": 11,
+    "First": 9,
+    "Frequency": 53
+  },
+  {
+    "Second": 7,
+    "First": 1,
+    "Frequency": 53
+  },
+  {
+    "Second": 6,
+    "First": 4,
+    "Frequency": 53
+  },
+  {
+    "Second": 39,
+    "First": 17,
+    "Frequency": 53
+  },
+  {
+    "Second": 34,
+    "First": 21,
+    "Frequency": 53
+  },
+  {
+    "Second": 46,
+    "First": 33,
+    "Frequency": 53
+  },
+  {
+    "Second": 47,
+    "First": 18,
+    "Frequency": 53
+  },
+  {
+    "Second": 40,
+    "First": 9,
+    "Frequency": 53
+  },
+  {
+    "Second": 38,
+    "First": 33,
+    "Frequency": 53
+  },
+  {
+    "Second": 46,
+    "First": 38,
+    "Frequency": 53
+  },
+  {
+    "Second": 33,
+    "First": 6,
+    "Frequency": 53
+  },
+  {
+    "Second": 45,
+    "First": 16,
+    "Frequency": 53
+  },
+  {
+    "Second": 45,
+    "First": 43,
+    "Frequency": 53
+  },
+  {
+    "Second": 24,
+    "First": 3,
+    "Frequency": 52
+  },
+  {
+    "Second": 24,
+    "First": 20,
+    "Frequency": 52
+  },
+  {
+    "Second": 32,
+    "First": 31,
+    "Frequency": 52
+  },
+  {
+    "Second": 48,
+    "First": 2,
+    "Frequency": 52
+  },
+  {
+    "Second": 48,
+    "First": 33,
+    "Frequency": 52
+  },
+  {
+    "Second": 9,
+    "First": 5,
+    "Frequency": 52
+  },
+  {
+    "Second": 27,
+    "First": 14,
+    "Frequency": 52
+  },
+  {
+    "Second": 27,
+    "First": 4,
+    "Frequency": 52
+  },
+  {
+    "Second": 19,
+    "First": 11,
+    "Frequency": 52
+  },
+  {
+    "Second": 21,
+    "First": 4,
+    "Frequency": 52
+  },
+  {
+    "Second": 33,
+    "First": 5,
+    "Frequency": 52
+  },
+  {
+    "Second": 33,
+    "First": 11,
+    "Frequency": 52
+  },
+  {
+    "Second": 45,
+    "First": 37,
+    "Frequency": 52
+  },
+  {
+    "Second": 38,
+    "First": 28,
+    "Frequency": 52
+  },
+  {
+    "Second": 40,
+    "First": 38,
+    "Frequency": 52
+  },
+  {
+    "Second": 24,
+    "First": 4,
+    "Frequency": 52
+  },
+  {
+    "Second": 49,
+    "First": 46,
+    "Frequency": 52
+  },
+  {
+    "Second": 25,
+    "First": 22,
+    "Frequency": 52
+  },
+  {
+    "Second": 25,
+    "First": 12,
+    "Frequency": 52
+  },
+  {
+    "Second": 49,
+    "First": 12,
+    "Frequency": 52
+  },
+  {
+    "Second": 13,
+    "First": 7,
+    "Frequency": 52
+  },
+  {
+    "Second": 28,
+    "First": 27,
+    "Frequency": 52
+  },
+  {
+    "Second": 41,
+    "First": 30,
+    "Frequency": 52
+  },
+  {
+    "Second": 41,
+    "First": 12,
+    "Frequency": 52
+  },
+  {
+    "Second": 28,
+    "First": 23,
+    "Frequency": 52
+  },
+  {
+    "Second": 47,
+    "First": 44,
+    "Frequency": 52
+  },
+  {
+    "Second": 47,
+    "First": 15,
+    "Frequency": 52
+  },
+  {
+    "Second": 23,
+    "First": 15,
+    "Frequency": 52
+  },
+  {
+    "Second": 48,
+    "First": 16,
+    "Frequency": 52
+  },
+  {
+    "Second": 30,
+    "First": 6,
+    "Frequency": 52
+  },
+  {
+    "Second": 31,
+    "First": 7,
+    "Frequency": 52
+  },
+  {
+    "Second": 46,
+    "First": 23,
+    "Frequency": 52
+  },
+  {
+    "Second": 19,
+    "First": 1,
+    "Frequency": 52
+  },
+  {
+    "Second": 37,
+    "First": 1,
+    "Frequency": 52
+  },
+  {
+    "Second": 29,
+    "First": 22,
+    "Frequency": 52
+  },
+  {
+    "Second": 47,
+    "First": 43,
+    "Frequency": 52
+  },
+  {
+    "Second": 10,
+    "First": 5,
+    "Frequency": 52
+  },
+  {
+    "Second": 30,
+    "First": 25,
+    "Frequency": 52
+  },
+  {
+    "Second": 10,
+    "First": 7,
+    "Frequency": 52
+  },
+  {
+    "Second": 44,
+    "First": 10,
+    "Frequency": 52
+  },
+  {
+    "Second": 43,
+    "First": 18,
+    "Frequency": 52
+  },
+  {
+    "Second": 27,
+    "First": 2,
+    "Frequency": 52
+  },
+  {
+    "Second": 31,
+    "First": 1,
+    "Frequency": 52
+  },
+  {
+    "Second": 46,
+    "First": 36,
+    "Frequency": 52
+  },
+  {
+    "Second": 42,
+    "First": 10,
+    "Frequency": 52
+  },
+  {
+    "Second": 17,
+    "First": 3,
+    "Frequency": 52
+  },
+  {
+    "Second": 45,
+    "First": 17,
+    "Frequency": 52
+  },
+  {
+    "Second": 31,
+    "First": 16,
+    "Frequency": 52
+  },
+  {
+    "Second": 29,
+    "First": 18,
+    "Frequency": 52
+  },
+  {
+    "Second": 44,
+    "First": 25,
+    "Frequency": 52
+  },
+  {
+    "Second": 40,
+    "First": 36,
+    "Frequency": 52
+  },
+  {
+    "Second": 43,
+    "First": 32,
+    "Frequency": 52
+  },
+  {
+    "Second": 46,
+    "First": 8,
+    "Frequency": 52
+  },
+  {
+    "Second": 47,
+    "First": 4,
+    "Frequency": 52
+  },
+  {
+    "Second": 44,
+    "First": 12,
+    "Frequency": 52
+  },
+  {
+    "Second": 40,
+    "First": 14,
+    "Frequency": 52
+  },
+  {
+    "Second": 40,
+    "First": 37,
+    "Frequency": 52
+  },
+  {
+    "Second": 45,
+    "First": 28,
+    "Frequency": 52
+  },
+  {
+    "Second": 44,
+    "First": 6,
+    "Frequency": 52
+  },
+  {
+    "Second": 41,
+    "First": 23,
+    "Frequency": 52
+  },
+  {
+    "Second": 36,
+    "First": 7,
+    "Frequency": 52
+  },
+  {
+    "Second": 34,
+    "First": 33,
+    "Frequency": 52
+  },
+  {
+    "Second": 47,
+    "First": 7,
+    "Frequency": 52
+  },
+  {
+    "Second": 31,
+    "First": 29,
+    "Frequency": 52
+  },
+  {
+    "Second": 29,
+    "First": 26,
+    "Frequency": 52
+  },
+  {
+    "Second": 40,
+    "First": 2,
+    "Frequency": 51
+  },
+  {
+    "Second": 39,
+    "First": 34,
+    "Frequency": 51
+  },
+  {
+    "Second": 32,
+    "First": 18,
+    "Frequency": 51
+  },
+  {
+    "Second": 27,
+    "First": 22,
+    "Frequency": 51
+  },
+  {
+    "Second": 43,
+    "First": 3,
+    "Frequency": 51
+  },
+  {
+    "Second": 48,
+    "First": 8,
+    "Frequency": 51
+  },
+  {
+    "Second": 37,
+    "First": 18,
+    "Frequency": 51
+  },
+  {
+    "Second": 36,
+    "First": 33,
+    "Frequency": 51
+  },
+  {
+    "Second": 24,
+    "First": 21,
+    "Frequency": 51
+  },
+  {
+    "Second": 33,
+    "First": 21,
+    "Frequency": 51
+  },
+  {
+    "Second": 45,
+    "First": 11,
+    "Frequency": 51
+  },
+  {
+    "Second": 28,
+    "First": 7,
+    "Frequency": 51
+  },
+  {
+    "Second": 15,
+    "First": 7,
+    "Frequency": 51
+  },
+  {
+    "Second": 49,
+    "First": 22,
+    "Frequency": 51
+  },
+  {
+    "Second": 39,
+    "First": 38,
+    "Frequency": 51
+  },
+  {
+    "Second": 43,
+    "First": 10,
+    "Frequency": 51
+  },
+  {
+    "Second": 26,
+    "First": 21,
+    "Frequency": 51
+  },
+  {
+    "Second": 35,
+    "First": 34,
+    "Frequency": 51
+  },
+  {
+    "Second": 34,
+    "First": 15,
+    "Frequency": 51
+  },
+  {
+    "Second": 46,
+    "First": 31,
+    "Frequency": 51
+  },
+  {
+    "Second": 47,
+    "First": 45,
+    "Frequency": 51
+  },
+  {
+    "Second": 43,
+    "First": 9,
+    "Frequency": 51
+  },
+  {
+    "Second": 49,
+    "First": 45,
+    "Frequency": 51
+  },
+  {
+    "Second": 34,
+    "First": 13,
+    "Frequency": 51
+  },
+  {
+    "Second": 47,
+    "First": 6,
+    "Frequency": 51
+  },
+  {
+    "Second": 27,
+    "First": 3,
+    "Frequency": 51
+  },
+  {
+    "Second": 30,
+    "First": 22,
+    "Frequency": 51
+  },
+  {
+    "Second": 21,
+    "First": 12,
+    "Frequency": 51
+  },
+  {
+    "Second": 43,
+    "First": 27,
+    "Frequency": 51
+  },
+  {
+    "Second": 43,
+    "First": 23,
+    "Frequency": 51
+  },
+  {
+    "Second": 16,
+    "First": 11,
+    "Frequency": 51
+  },
+  {
+    "Second": 27,
+    "First": 16,
+    "Frequency": 51
+  },
+  {
+    "Second": 17,
+    "First": 16,
+    "Frequency": 51
+  },
+  {
+    "Second": 41,
+    "First": 16,
+    "Frequency": 51
+  },
+  {
+    "Second": 40,
+    "First": 35,
+    "Frequency": 51
+  },
+  {
+    "Second": 22,
+    "First": 16,
+    "Frequency": 51
+  },
+  {
+    "Second": 33,
+    "First": 22,
+    "Frequency": 51
+  },
+  {
+    "Second": 35,
+    "First": 20,
+    "Frequency": 51
+  },
+  {
+    "Second": 25,
+    "First": 14,
+    "Frequency": 51
+  },
+  {
+    "Second": 27,
+    "First": 10,
+    "Frequency": 51
+  },
+  {
+    "Second": 36,
+    "First": 2,
+    "Frequency": 51
+  },
+  {
+    "Second": 48,
+    "First": 36,
+    "Frequency": 51
+  },
+  {
+    "Second": 41,
+    "First": 25,
+    "Frequency": 51
+  },
+  {
+    "Second": 34,
+    "First": 17,
+    "Frequency": 51
+  },
+  {
+    "Second": 45,
+    "First": 44,
+    "Frequency": 51
+  },
+  {
+    "Second": 35,
+    "First": 23,
+    "Frequency": 51
+  },
+  {
+    "Second": 41,
+    "First": 20,
+    "Frequency": 51
+  },
+  {
+    "Second": 44,
+    "First": 31,
+    "Frequency": 51
+  },
+  {
+    "Second": 40,
+    "First": 15,
+    "Frequency": 51
+  },
+  {
+    "Second": 40,
+    "First": 19,
+    "Frequency": 51
+  },
+  {
+    "Second": 49,
+    "First": 36,
+    "Frequency": 51
+  },
+  {
+    "Second": 37,
+    "First": 34,
+    "Frequency": 51
+  },
+  {
+    "Second": 9,
+    "First": 2,
+    "Frequency": 51
+  },
+  {
+    "Second": 7,
+    "First": 2,
+    "Frequency": 51
+  },
+  {
+    "Second": 30,
+    "First": 27,
+    "Frequency": 51
+  },
+  {
+    "Second": 45,
+    "First": 8,
+    "Frequency": 51
+  },
+  {
+    "Second": 35,
+    "First": 31,
+    "Frequency": 51
+  },
+  {
+    "Second": 39,
+    "First": 12,
+    "Frequency": 51
+  },
+  {
+    "Second": 30,
+    "First": 28,
+    "Frequency": 51
+  },
+  {
+    "Second": 40,
+    "First": 11,
+    "Frequency": 51
+  },
+  {
+    "Second": 41,
+    "First": 26,
+    "Frequency": 51
+  },
+  {
+    "Second": 18,
+    "First": 16,
+    "Frequency": 51
+  },
+  {
+    "Second": 40,
+    "First": 33,
+    "Frequency": 51
+  },
+  {
+    "Second": 35,
+    "First": 26,
+    "Frequency": 51
+  },
+  {
+    "Second": 30,
+    "First": 5,
+    "Frequency": 51
+  },
+  {
+    "Second": 14,
+    "First": 1,
+    "Frequency": 51
+  },
+  {
+    "Second": 24,
+    "First": 7,
+    "Frequency": 50
+  },
+  {
+    "Second": 24,
+    "First": 2,
+    "Frequency": 50
+  },
+  {
+    "Second": 39,
+    "First": 31,
+    "Frequency": 50
+  },
+  {
+    "Second": 41,
+    "First": 39,
+    "Frequency": 50
+  },
+  {
+    "Second": 31,
+    "First": 19,
+    "Frequency": 50
+  },
+  {
+    "Second": 44,
+    "First": 42,
+    "Frequency": 50
+  },
+  {
+    "Second": 36,
+    "First": 24,
+    "Frequency": 50
+  },
+  {
+    "Second": 43,
+    "First": 22,
+    "Frequency": 50
+  },
+  {
+    "Second": 40,
+    "First": 10,
+    "Frequency": 50
+  },
+  {
+    "Second": 26,
+    "First": 17,
+    "Frequency": 50
+  },
+  {
+    "Second": 38,
+    "First": 16,
+    "Frequency": 50
+  },
+  {
+    "Second": 46,
+    "First": 41,
+    "Frequency": 50
+  },
+  {
+    "Second": 42,
+    "First": 15,
+    "Frequency": 50
+  },
+  {
+    "Second": 34,
+    "First": 12,
+    "Frequency": 50
+  },
+  {
+    "Second": 4,
+    "First": 3,
+    "Frequency": 50
+  },
+  {
+    "Second": 38,
+    "First": 27,
+    "Frequency": 50
+  },
+  {
+    "Second": 41,
+    "First": 17,
+    "Frequency": 50
+  },
+  {
+    "Second": 16,
+    "First": 10,
+    "Frequency": 50
+  },
+  {
+    "Second": 38,
+    "First": 20,
+    "Frequency": 50
+  },
+  {
+    "Second": 40,
+    "First": 29,
+    "Frequency": 50
+  },
+  {
+    "Second": 32,
+    "First": 26,
+    "Frequency": 50
+  },
+  {
+    "Second": 42,
+    "First": 34,
+    "Frequency": 50
+  },
+  {
+    "Second": 37,
+    "First": 22,
+    "Frequency": 50
+  },
+  {
+    "Second": 49,
+    "First": 14,
+    "Frequency": 50
+  },
+  {
+    "Second": 35,
+    "First": 9,
+    "Frequency": 50
+  },
+  {
+    "Second": 36,
+    "First": 29,
+    "Frequency": 50
+  },
+  {
+    "Second": 42,
+    "First": 1,
+    "Frequency": 50
+  },
+  {
+    "Second": 49,
+    "First": 42,
+    "Frequency": 50
+  },
+  {
+    "Second": 39,
+    "First": 36,
+    "Frequency": 50
+  },
+  {
+    "Second": 25,
+    "First": 16,
+    "Frequency": 50
+  },
+  {
+    "Second": 49,
+    "First": 32,
+    "Frequency": 50
+  },
+  {
+    "Second": 44,
+    "First": 27,
+    "Frequency": 50
+  },
+  {
+    "Second": 40,
+    "First": 4,
+    "Frequency": 50
+  },
+  {
+    "Second": 38,
+    "First": 36,
+    "Frequency": 50
+  },
+  {
+    "Second": 45,
+    "First": 34,
+    "Frequency": 50
+  },
+  {
+    "Second": 45,
+    "First": 32,
+    "Frequency": 50
+  },
+  {
+    "Second": 47,
+    "First": 33,
+    "Frequency": 50
+  },
+  {
+    "Second": 42,
+    "First": 25,
+    "Frequency": 50
+  },
+  {
+    "Second": 35,
+    "First": 5,
+    "Frequency": 50
+  },
+  {
+    "Second": 32,
+    "First": 24,
+    "Frequency": 50
+  },
+  {
+    "Second": 9,
+    "First": 4,
+    "Frequency": 50
+  },
+  {
+    "Second": 30,
+    "First": 12,
+    "Frequency": 50
+  },
+  {
+    "Second": 46,
+    "First": 32,
+    "Frequency": 50
+  },
+  {
+    "Second": 7,
+    "First": 6,
+    "Frequency": 50
+  },
+  {
+    "Second": 47,
+    "First": 8,
+    "Frequency": 50
+  },
+  {
+    "Second": 44,
+    "First": 8,
+    "Frequency": 50
+  },
+  {
+    "Second": 26,
+    "First": 9,
+    "Frequency": 50
+  },
+  {
+    "Second": 47,
+    "First": 25,
+    "Frequency": 50
+  },
+  {
+    "Second": 34,
+    "First": 14,
+    "Frequency": 50
+  },
+  {
+    "Second": 19,
+    "First": 17,
+    "Frequency": 50
+  },
+  {
+    "Second": 28,
+    "First": 24,
+    "Frequency": 50
+  },
+  {
+    "Second": 45,
+    "First": 30,
+    "Frequency": 50
+  },
+  {
+    "Second": 44,
+    "First": 43,
+    "Frequency": 50
+  },
+  {
+    "Second": 33,
+    "First": 19,
+    "Frequency": 50
+  },
+  {
+    "Second": 31,
+    "First": 17,
+    "Frequency": 50
+  },
+  {
+    "Second": 23,
+    "First": 1,
+    "Frequency": 50
+  },
+  {
+    "Second": 21,
+    "First": 7,
+    "Frequency": 50
+  },
+  {
+    "Second": 14,
+    "First": 3,
+    "Frequency": 49
+  },
+  {
+    "Second": 20,
+    "First": 14,
+    "Frequency": 49
+  },
+  {
+    "Second": 43,
+    "First": 2,
+    "Frequency": 49
+  },
+  {
+    "Second": 48,
+    "First": 31,
+    "Frequency": 49
+  },
+  {
+    "Second": 33,
+    "First": 20,
+    "Frequency": 49
+  },
+  {
+    "Second": 11,
+    "First": 2,
+    "Frequency": 49
+  },
+  {
+    "Second": 8,
+    "First": 2,
+    "Frequency": 49
+  },
+  {
+    "Second": 43,
+    "First": 7,
+    "Frequency": 49
+  },
+  {
+    "Second": 49,
+    "First": 7,
+    "Frequency": 49
+  },
+  {
+    "Second": 38,
+    "First": 26,
+    "Frequency": 49
+  },
+  {
+    "Second": 39,
+    "First": 30,
+    "Frequency": 49
+  },
+  {
+    "Second": 46,
+    "First": 19,
+    "Frequency": 49
+  },
+  {
+    "Second": 46,
+    "First": 29,
+    "Frequency": 49
+  },
+  {
+    "Second": 10,
+    "First": 4,
+    "Frequency": 49
+  },
+  {
+    "Second": 26,
+    "First": 10,
+    "Frequency": 49
+  },
+  {
+    "Second": 44,
+    "First": 15,
+    "Frequency": 49
+  },
+  {
+    "Second": 35,
+    "First": 10,
+    "Frequency": 49
+  },
+  {
+    "Second": 38,
+    "First": 22,
+    "Frequency": 49
+  },
+  {
+    "Second": 23,
+    "First": 22,
+    "Frequency": 49
+  },
+  {
+    "Second": 20,
+    "First": 15,
+    "Frequency": 49
+  },
+  {
+    "Second": 49,
+    "First": 47,
+    "Frequency": 49
+  },
+  {
+    "Second": 22,
+    "First": 12,
+    "Frequency": 49
+  },
+  {
+    "Second": 32,
+    "First": 22,
+    "Frequency": 49
+  },
+  {
+    "Second": 35,
+    "First": 22,
+    "Frequency": 49
+  },
+  {
+    "Second": 47,
+    "First": 5,
+    "Frequency": 49
+  },
+  {
+    "Second": 32,
+    "First": 6,
+    "Frequency": 49
+  },
+  {
+    "Second": 26,
+    "First": 3,
+    "Frequency": 49
+  },
+  {
+    "Second": 12,
+    "First": 3,
+    "Frequency": 49
+  },
+  {
+    "Second": 46,
+    "First": 34,
+    "Frequency": 49
+  },
+  {
+    "Second": 27,
+    "First": 19,
+    "Frequency": 49
+  },
+  {
+    "Second": 39,
+    "First": 16,
+    "Frequency": 49
+  },
+  {
+    "Second": 38,
+    "First": 6,
+    "Frequency": 49
+  },
+  {
+    "Second": 47,
+    "First": 17,
+    "Frequency": 49
+  },
+  {
+    "Second": 24,
+    "First": 23,
+    "Frequency": 49
+  },
+  {
+    "Second": 22,
+    "First": 2,
+    "Frequency": 49
+  },
+  {
+    "Second": 39,
+    "First": 25,
+    "Frequency": 49
+  },
+  {
+    "Second": 46,
+    "First": 43,
+    "Frequency": 49
+  },
+  {
+    "Second": 36,
+    "First": 18,
+    "Frequency": 49
+  },
+  {
+    "Second": 43,
+    "First": 19,
+    "Frequency": 49
+  },
+  {
+    "Second": 41,
+    "First": 13,
+    "Frequency": 49
+  },
+  {
+    "Second": 48,
+    "First": 24,
+    "Frequency": 49
+  },
+  {
+    "Second": 37,
+    "First": 21,
+    "Frequency": 49
+  },
+  {
+    "Second": 34,
+    "First": 24,
+    "Frequency": 49
+  },
+  {
+    "Second": 23,
+    "First": 19,
+    "Frequency": 49
+  },
+  {
+    "Second": 31,
+    "First": 25,
+    "Frequency": 49
+  },
+  {
+    "Second": 16,
+    "First": 12,
+    "Frequency": 49
+  },
+  {
+    "Second": 38,
+    "First": 32,
+    "Frequency": 49
+  },
+  {
+    "Second": 45,
+    "First": 35,
+    "Frequency": 49
+  },
+  {
+    "Second": 36,
+    "First": 32,
+    "Frequency": 49
+  },
+  {
+    "Second": 41,
+    "First": 8,
+    "Frequency": 49
+  },
+  {
+    "Second": 40,
+    "First": 30,
+    "Frequency": 49
+  },
+  {
+    "Second": 45,
+    "First": 24,
+    "Frequency": 49
+  },
+  {
+    "Second": 28,
+    "First": 11,
+    "Frequency": 49
+  },
+  {
+    "Second": 44,
+    "First": 3,
+    "Frequency": 49
+  },
+  {
+    "Second": 40,
+    "First": 1,
+    "Frequency": 49
+  },
+  {
+    "Second": 45,
+    "First": 2,
+    "Frequency": 49
+  },
+  {
+    "Second": 20,
+    "First": 4,
+    "Frequency": 49
+  },
+  {
+    "Second": 49,
+    "First": 11,
+    "Frequency": 49
+  },
+  {
+    "Second": 32,
+    "First": 29,
+    "Frequency": 49
+  },
+  {
+    "Second": 35,
+    "First": 33,
+    "Frequency": 49
+  },
+  {
+    "Second": 47,
+    "First": 9,
+    "Frequency": 49
+  },
+  {
+    "Second": 39,
+    "First": 4,
+    "Frequency": 48
+  },
+  {
+    "Second": 48,
+    "First": 41,
+    "Frequency": 48
+  },
+  {
+    "Second": 41,
+    "First": 9,
+    "Frequency": 48
+  },
+  {
+    "Second": 32,
+    "First": 9,
+    "Frequency": 48
+  },
+  {
+    "Second": 49,
+    "First": 20,
+    "Frequency": 48
+  },
+  {
+    "Second": 49,
+    "First": 48,
+    "Frequency": 48
+  },
+  {
+    "Second": 26,
+    "First": 4,
+    "Frequency": 48
+  },
+  {
+    "Second": 35,
+    "First": 2,
+    "Frequency": 48
+  },
+  {
+    "Second": 34,
+    "First": 3,
+    "Frequency": 48
+  },
+  {
+    "Second": 18,
+    "First": 2,
+    "Frequency": 48
+  },
+  {
+    "Second": 45,
+    "First": 33,
+    "Frequency": 48
+  },
+  {
+    "Second": 17,
+    "First": 4,
+    "Frequency": 48
+  },
+  {
+    "Second": 44,
+    "First": 16,
+    "Frequency": 48
+  },
+  {
+    "Second": 15,
+    "First": 9,
+    "Frequency": 48
+  },
+  {
+    "Second": 49,
+    "First": 21,
+    "Frequency": 48
+  },
+  {
+    "Second": 46,
+    "First": 6,
+    "Frequency": 48
+  },
+  {
+    "Second": 15,
+    "First": 4,
+    "Frequency": 48
+  },
+  {
+    "Second": 35,
+    "First": 25,
+    "Frequency": 48
+  },
+  {
+    "Second": 32,
+    "First": 13,
+    "Frequency": 48
+  },
+  {
+    "Second": 19,
+    "First": 13,
+    "Frequency": 48
+  },
+  {
+    "Second": 40,
+    "First": 6,
+    "Frequency": 48
+  },
+  {
+    "Second": 42,
+    "First": 6,
+    "Frequency": 48
+  },
+  {
+    "Second": 21,
+    "First": 3,
+    "Frequency": 48
+  },
+  {
+    "Second": 43,
+    "First": 16,
+    "Frequency": 48
+  },
+  {
+    "Second": 17,
+    "First": 6,
+    "Frequency": 48
+  },
+  {
+    "Second": 11,
+    "First": 10,
+    "Frequency": 48
+  },
+  {
+    "Second": 34,
+    "First": 19,
+    "Frequency": 48
+  },
+  {
+    "Second": 6,
+    "First": 3,
+    "Frequency": 48
+  },
+  {
+    "Second": 24,
+    "First": 6,
+    "Frequency": 48
+  },
+  {
+    "Second": 22,
+    "First": 21,
+    "Frequency": 48
+  },
+  {
+    "Second": 13,
+    "First": 4,
+    "Frequency": 48
+  },
+  {
+    "Second": 42,
+    "First": 35,
+    "Frequency": 48
+  },
+  {
+    "Second": 20,
+    "First": 19,
+    "Frequency": 48
+  },
+  {
+    "Second": 48,
+    "First": 45,
+    "Frequency": 48
+  },
+  {
+    "Second": 49,
+    "First": 17,
+    "Frequency": 48
+  },
+  {
+    "Second": 15,
+    "First": 3,
+    "Frequency": 48
+  },
+  {
+    "Second": 37,
+    "First": 20,
+    "Frequency": 48
+  },
+  {
+    "Second": 23,
+    "First": 17,
+    "Frequency": 48
+  },
+  {
+    "Second": 43,
+    "First": 14,
+    "Frequency": 48
+  },
+  {
+    "Second": 43,
+    "First": 35,
+    "Frequency": 48
+  },
+  {
+    "Second": 23,
+    "First": 7,
+    "Frequency": 48
+  },
+  {
+    "Second": 44,
+    "First": 14,
+    "Frequency": 48
+  },
+  {
+    "Second": 28,
+    "First": 4,
+    "Frequency": 48
+  },
+  {
+    "Second": 38,
+    "First": 17,
+    "Frequency": 48
+  },
+  {
+    "Second": 37,
+    "First": 28,
+    "Frequency": 48
+  },
+  {
+    "Second": 33,
+    "First": 1,
+    "Frequency": 48
+  },
+  {
+    "Second": 36,
+    "First": 10,
+    "Frequency": 48
+  },
+  {
+    "Second": 25,
+    "First": 23,
+    "Frequency": 48
+  },
+  {
+    "Second": 41,
+    "First": 28,
+    "Frequency": 48
+  },
+  {
+    "Second": 48,
+    "First": 12,
+    "Frequency": 48
+  },
+  {
+    "Second": 33,
+    "First": 8,
+    "Frequency": 48
+  },
+  {
+    "Second": 47,
+    "First": 20,
+    "Frequency": 48
+  },
+  {
+    "Second": 46,
+    "First": 7,
+    "Frequency": 48
+  },
+  {
+    "Second": 42,
+    "First": 14,
+    "Frequency": 48
+  },
+  {
+    "Second": 26,
+    "First": 16,
+    "Frequency": 48
+  },
+  {
+    "Second": 44,
+    "First": 29,
+    "Frequency": 48
+  },
+  {
+    "Second": 38,
+    "First": 12,
+    "Frequency": 48
+  },
+  {
+    "Second": 43,
+    "First": 29,
+    "Frequency": 48
+  },
+  {
+    "Second": 20,
+    "First": 8,
+    "Frequency": 47
+  },
+  {
+    "Second": 24,
+    "First": 17,
+    "Frequency": 47
+  },
+  {
+    "Second": 34,
+    "First": 4,
+    "Frequency": 47
+  },
+  {
+    "Second": 3,
+    "First": 2,
+    "Frequency": 47
+  },
+  {
+    "Second": 20,
+    "First": 2,
+    "Frequency": 47
+  },
+  {
+    "Second": 26,
+    "First": 22,
+    "Frequency": 47
+  },
+  {
+    "Second": 46,
+    "First": 22,
+    "Frequency": 47
+  },
+  {
+    "Second": 38,
+    "First": 1,
+    "Frequency": 47
+  },
+  {
+    "Second": 10,
+    "First": 8,
+    "Frequency": 47
+  },
+  {
+    "Second": 41,
+    "First": 21,
+    "Frequency": 47
+  },
+  {
+    "Second": 12,
+    "First": 11,
+    "Frequency": 47
+  },
+  {
+    "Second": 40,
+    "First": 39,
+    "Frequency": 47
+  },
+  {
+    "Second": 24,
+    "First": 10,
+    "Frequency": 47
+  },
+  {
+    "Second": 34,
+    "First": 16,
+    "Frequency": 47
+  },
+  {
+    "Second": 30,
+    "First": 19,
+    "Frequency": 47
+  },
+  {
+    "Second": 31,
+    "First": 23,
+    "Frequency": 47
+  },
+  {
+    "Second": 12,
+    "First": 9,
+    "Frequency": 47
+  },
+  {
+    "Second": 15,
+    "First": 12,
+    "Frequency": 47
+  },
+  {
+    "Second": 46,
+    "First": 35,
+    "Frequency": 47
+  },
+  {
+    "Second": 34,
+    "First": 29,
+    "Frequency": 47
+  },
+  {
+    "Second": 35,
+    "First": 29,
+    "Frequency": 47
+  },
+  {
+    "Second": 22,
+    "First": 19,
+    "Frequency": 47
+  },
+  {
+    "Second": 32,
+    "First": 25,
+    "Frequency": 47
+  },
+  {
+    "Second": 35,
+    "First": 13,
+    "Frequency": 47
+  },
+  {
+    "Second": 34,
+    "First": 28,
+    "Frequency": 47
+  },
+  {
+    "Second": 47,
+    "First": 42,
+    "Frequency": 47
+  },
+  {
+    "Second": 48,
+    "First": 30,
+    "Frequency": 47
+  },
+  {
+    "Second": 43,
+    "First": 6,
+    "Frequency": 47
+  },
+  {
+    "Second": 43,
+    "First": 11,
+    "Frequency": 47
+  },
+  {
+    "Second": 20,
+    "First": 10,
+    "Frequency": 47
+  },
+  {
+    "Second": 38,
+    "First": 19,
+    "Frequency": 47
+  },
+  {
+    "Second": 35,
+    "First": 12,
+    "Frequency": 47
+  },
+  {
+    "Second": 31,
+    "First": 26,
+    "Frequency": 47
+  },
+  {
+    "Second": 26,
+    "First": 23,
+    "Frequency": 47
+  },
+  {
+    "Second": 19,
+    "First": 3,
+    "Frequency": 47
+  },
+  {
+    "Second": 29,
+    "First": 24,
+    "Frequency": 47
+  },
+  {
+    "Second": 24,
+    "First": 5,
+    "Frequency": 47
+  },
+  {
+    "Second": 24,
+    "First": 1,
+    "Frequency": 47
+  },
+  {
+    "Second": 49,
+    "First": 1,
+    "Frequency": 47
+  },
+  {
+    "Second": 11,
+    "First": 4,
+    "Frequency": 47
+  },
+  {
+    "Second": 45,
+    "First": 10,
+    "Frequency": 47
+  },
+  {
+    "Second": 17,
+    "First": 11,
+    "Frequency": 47
+  },
+  {
+    "Second": 38,
+    "First": 2,
+    "Frequency": 47
+  },
+  {
+    "Second": 33,
+    "First": 25,
+    "Frequency": 47
+  },
+  {
+    "Second": 29,
+    "First": 3,
+    "Frequency": 47
+  },
+  {
+    "Second": 32,
+    "First": 8,
+    "Frequency": 47
+  },
+  {
+    "Second": 42,
+    "First": 8,
+    "Frequency": 47
+  },
+  {
+    "Second": 35,
+    "First": 7,
+    "Frequency": 47
+  },
+  {
+    "Second": 7,
+    "First": 5,
+    "Frequency": 47
+  },
+  {
+    "Second": 49,
+    "First": 40,
+    "Frequency": 47
+  },
+  {
+    "Second": 45,
+    "First": 3,
+    "Frequency": 47
+  },
+  {
+    "Second": 42,
+    "First": 19,
+    "Frequency": 47
+  },
+  {
+    "Second": 44,
+    "First": 19,
+    "Frequency": 47
+  },
+  {
+    "Second": 36,
+    "First": 17,
+    "Frequency": 47
+  },
+  {
+    "Second": 46,
+    "First": 15,
+    "Frequency": 47
+  },
+  {
+    "Second": 40,
+    "First": 16,
+    "Frequency": 47
+  },
+  {
+    "Second": 32,
+    "First": 17,
+    "Frequency": 47
+  },
+  {
+    "Second": 32,
+    "First": 12,
+    "Frequency": 47
+  },
+  {
+    "Second": 13,
+    "First": 3,
+    "Frequency": 47
+  },
+  {
+    "Second": 30,
+    "First": 8,
+    "Frequency": 47
+  },
+  {
+    "Second": 20,
+    "First": 18,
+    "Frequency": 47
+  },
+  {
+    "Second": 39,
+    "First": 7,
+    "Frequency": 47
+  },
+  {
+    "Second": 21,
+    "First": 16,
+    "Frequency": 47
+  },
+  {
+    "Second": 25,
+    "First": 18,
+    "Frequency": 47
+  },
+  {
+    "Second": 34,
+    "First": 2,
+    "Frequency": 47
+  },
+  {
+    "Second": 23,
+    "First": 2,
+    "Frequency": 47
+  },
+  {
+    "Second": 45,
+    "First": 13,
+    "Frequency": 47
+  },
+  {
+    "Second": 43,
+    "First": 4,
+    "Frequency": 47
+  },
+  {
+    "Second": 33,
+    "First": 32,
+    "Frequency": 47
+  },
+  {
+    "Second": 7,
+    "First": 3,
+    "Frequency": 46
+  },
+  {
+    "Second": 48,
+    "First": 20,
+    "Frequency": 46
+  },
+  {
+    "Second": 27,
+    "First": 26,
+    "Frequency": 46
+  },
+  {
+    "Second": 43,
+    "First": 5,
+    "Frequency": 46
+  },
+  {
+    "Second": 34,
+    "First": 1,
+    "Frequency": 46
+  },
+  {
+    "Second": 48,
+    "First": 37,
+    "Frequency": 46
+  },
+  {
+    "Second": 44,
+    "First": 4,
+    "Frequency": 46
+  },
+  {
+    "Second": 30,
+    "First": 21,
+    "Frequency": 46
+  },
+  {
+    "Second": 42,
+    "First": 24,
+    "Frequency": 46
+  },
+  {
+    "Second": 41,
+    "First": 33,
+    "Frequency": 46
+  },
+  {
+    "Second": 36,
+    "First": 21,
+    "Frequency": 46
+  },
+  {
+    "Second": 42,
+    "First": 36,
+    "Frequency": 46
+  },
+  {
+    "Second": 28,
+    "First": 10,
+    "Frequency": 46
+  },
+  {
+    "Second": 26,
+    "First": 13,
+    "Frequency": 46
+  },
+  {
+    "Second": 21,
+    "First": 5,
+    "Frequency": 46
+  },
+  {
+    "Second": 29,
+    "First": 5,
+    "Frequency": 46
+  },
+  {
+    "Second": 38,
+    "First": 35,
+    "Frequency": 46
+  },
+  {
+    "Second": 44,
+    "First": 35,
+    "Frequency": 46
+  },
+  {
+    "Second": 49,
+    "First": 24,
+    "Frequency": 46
+  },
+  {
+    "Second": 47,
+    "First": 22,
+    "Frequency": 46
+  },
+  {
+    "Second": 48,
+    "First": 23,
+    "Frequency": 46
+  },
+  {
+    "Second": 20,
+    "First": 12,
+    "Frequency": 46
+  },
+  {
+    "Second": 24,
+    "First": 15,
+    "Frequency": 46
+  },
+  {
+    "Second": 35,
+    "First": 21,
+    "Frequency": 46
+  },
+  {
+    "Second": 49,
+    "First": 16,
+    "Frequency": 46
+  },
+  {
+    "Second": 34,
+    "First": 27,
+    "Frequency": 46
+  },
+  {
+    "Second": 28,
+    "First": 13,
+    "Frequency": 46
+  },
+  {
+    "Second": 40,
+    "First": 5,
+    "Frequency": 46
+  },
+  {
+    "Second": 12,
+    "First": 4,
+    "Frequency": 46
+  },
+  {
+    "Second": 40,
+    "First": 12,
+    "Frequency": 46
+  },
+  {
+    "Second": 21,
+    "First": 17,
+    "Frequency": 46
+  },
+  {
+    "Second": 39,
+    "First": 29,
+    "Frequency": 46
+  },
+  {
+    "Second": 23,
+    "First": 21,
+    "Frequency": 46
+  },
+  {
+    "Second": 21,
+    "First": 10,
+    "Frequency": 46
+  },
+  {
+    "Second": 48,
+    "First": 25,
+    "Frequency": 46
+  },
+  {
+    "Second": 25,
+    "First": 7,
+    "Frequency": 46
+  },
+  {
+    "Second": 49,
+    "First": 44,
+    "Frequency": 46
+  },
+  {
+    "Second": 43,
+    "First": 36,
+    "Frequency": 46
+  },
+  {
+    "Second": 37,
+    "First": 36,
+    "Frequency": 46
+  },
+  {
+    "Second": 34,
+    "First": 9,
+    "Frequency": 46
+  },
+  {
+    "Second": 36,
+    "First": 22,
+    "Frequency": 46
+  },
+  {
+    "Second": 17,
+    "First": 5,
+    "Frequency": 46
+  },
+  {
+    "Second": 16,
+    "First": 13,
+    "Frequency": 46
+  },
+  {
+    "Second": 31,
+    "First": 30,
+    "Frequency": 46
+  },
+  {
+    "Second": 45,
+    "First": 7,
+    "Frequency": 46
+  },
+  {
+    "Second": 45,
+    "First": 42,
+    "Frequency": 46
+  },
+  {
+    "Second": 17,
+    "First": 15,
+    "Frequency": 46
+  },
+  {
+    "Second": 32,
+    "First": 21,
+    "Frequency": 46
+  },
+  {
+    "Second": 23,
+    "First": 8,
+    "Frequency": 46
+  },
+  {
+    "Second": 42,
+    "First": 29,
+    "Frequency": 46
+  },
+  {
+    "Second": 47,
+    "First": 19,
+    "Frequency": 46
+  },
+  {
+    "Second": 7,
+    "First": 4,
+    "Frequency": 46
+  },
+  {
+    "Second": 46,
+    "First": 16,
+    "Frequency": 46
+  },
+  {
+    "Second": 30,
+    "First": 11,
+    "Frequency": 46
+  },
+  {
+    "Second": 30,
+    "First": 17,
+    "Frequency": 46
+  },
+  {
+    "Second": 34,
+    "First": 20,
+    "Frequency": 46
+  },
+  {
+    "Second": 27,
+    "First": 18,
+    "Frequency": 46
+  },
+  {
+    "Second": 29,
+    "First": 1,
+    "Frequency": 46
+  },
+  {
+    "Second": 40,
+    "First": 31,
+    "Frequency": 46
+  },
+  {
+    "Second": 41,
+    "First": 37,
+    "Frequency": 46
+  },
+  {
+    "Second": 38,
+    "First": 24,
+    "Frequency": 46
+  },
+  {
+    "Second": 2,
+    "First": 1,
+    "Frequency": 46
+  },
+  {
+    "Second": 8,
+    "First": 1,
+    "Frequency": 46
+  },
+  {
+    "Second": 42,
+    "First": 18,
+    "Frequency": 46
+  },
+  {
+    "Second": 40,
+    "First": 24,
+    "Frequency": 45
+  },
+  {
+    "Second": 41,
+    "First": 31,
+    "Frequency": 45
+  },
+  {
+    "Second": 31,
+    "First": 9,
+    "Frequency": 45
+  },
+  {
+    "Second": 44,
+    "First": 21,
+    "Frequency": 45
+  },
+  {
+    "Second": 46,
+    "First": 30,
+    "Frequency": 45
+  },
+  {
+    "Second": 35,
+    "First": 15,
+    "Frequency": 45
+  },
+  {
+    "Second": 24,
+    "First": 19,
+    "Frequency": 45
+  },
+  {
+    "Second": 49,
+    "First": 10,
+    "Frequency": 45
+  },
+  {
+    "Second": 30,
+    "First": 10,
+    "Frequency": 45
+  },
+  {
+    "Second": 48,
+    "First": 22,
+    "Frequency": 45
+  },
+  {
+    "Second": 22,
+    "First": 13,
+    "Frequency": 45
+  },
+  {
+    "Second": 13,
+    "First": 8,
+    "Frequency": 45
+  },
+  {
+    "Second": 42,
+    "First": 32,
+    "Frequency": 45
+  },
+  {
+    "Second": 22,
+    "First": 18,
+    "Frequency": 45
+  },
+  {
+    "Second": 10,
+    "First": 6,
+    "Frequency": 45
+  },
+  {
+    "Second": 32,
+    "First": 15,
+    "Frequency": 45
+  },
+  {
+    "Second": 29,
+    "First": 17,
+    "Frequency": 45
+  },
+  {
+    "Second": 26,
+    "First": 7,
+    "Frequency": 45
+  },
+  {
+    "Second": 28,
+    "First": 16,
+    "Frequency": 45
+  },
+  {
+    "Second": 22,
+    "First": 3,
+    "Frequency": 45
+  },
+  {
+    "Second": 23,
+    "First": 3,
+    "Frequency": 45
+  },
+  {
+    "Second": 22,
+    "First": 6,
+    "Frequency": 45
+  },
+  {
+    "Second": 25,
+    "First": 20,
+    "Frequency": 45
+  },
+  {
+    "Second": 18,
+    "First": 3,
+    "Frequency": 45
+  },
+  {
+    "Second": 39,
+    "First": 22,
+    "Frequency": 45
+  },
+  {
+    "Second": 41,
+    "First": 1,
+    "Frequency": 45
+  },
+  {
+    "Second": 36,
+    "First": 27,
+    "Frequency": 45
+  },
+  {
+    "Second": 39,
+    "First": 1,
+    "Frequency": 45
+  },
+  {
+    "Second": 16,
+    "First": 14,
+    "Frequency": 45
+  },
+  {
+    "Second": 48,
+    "First": 29,
+    "Frequency": 45
+  },
+  {
+    "Second": 16,
+    "First": 2,
+    "Frequency": 45
+  },
+  {
+    "Second": 32,
+    "First": 27,
+    "Frequency": 45
+  },
+  {
+    "Second": 27,
+    "First": 21,
+    "Frequency": 45
+  },
+  {
+    "Second": 44,
+    "First": 37,
+    "Frequency": 45
+  },
+  {
+    "Second": 42,
+    "First": 37,
+    "Frequency": 45
+  },
+  {
+    "Second": 28,
+    "First": 20,
+    "Frequency": 45
+  },
+  {
+    "Second": 28,
+    "First": 17,
+    "Frequency": 45
+  },
+  {
+    "Second": 19,
+    "First": 14,
+    "Frequency": 45
+  },
+  {
+    "Second": 44,
+    "First": 23,
+    "Frequency": 45
+  },
+  {
+    "Second": 46,
+    "First": 39,
+    "Frequency": 45
+  },
+  {
+    "Second": 28,
+    "First": 21,
+    "Frequency": 45
+  },
+  {
+    "Second": 48,
+    "First": 26,
+    "Frequency": 45
+  },
+  {
+    "Second": 47,
+    "First": 26,
+    "Frequency": 45
+  },
+  {
+    "Second": 39,
+    "First": 6,
+    "Frequency": 45
+  },
+  {
+    "Second": 40,
+    "First": 21,
+    "Frequency": 45
+  },
+  {
+    "Second": 36,
+    "First": 30,
+    "Frequency": 45
+  },
+  {
+    "Second": 25,
+    "First": 21,
+    "Frequency": 45
+  },
+  {
+    "Second": 30,
+    "First": 1,
+    "Frequency": 45
+  },
+  {
+    "Second": 40,
+    "First": 20,
+    "Frequency": 45
+  },
+  {
+    "Second": 30,
+    "First": 7,
+    "Frequency": 45
+  },
+  {
+    "Second": 39,
+    "First": 33,
+    "Frequency": 45
+  },
+  {
+    "Second": 20,
+    "First": 7,
+    "Frequency": 44
+  },
+  {
+    "Second": 25,
+    "First": 24,
+    "Frequency": 44
+  },
+  {
+    "Second": 43,
+    "First": 24,
+    "Frequency": 44
+  },
+  {
+    "Second": 43,
+    "First": 17,
+    "Frequency": 44
+  },
+  {
+    "Second": 9,
+    "First": 8,
+    "Frequency": 44
+  },
+  {
+    "Second": 8,
+    "First": 5,
+    "Frequency": 44
+  },
+  {
+    "Second": 46,
+    "First": 42,
+    "Frequency": 44
+  },
+  {
+    "Second": 49,
+    "First": 28,
+    "Frequency": 44
+  },
+  {
+    "Second": 28,
+    "First": 15,
+    "Frequency": 44
+  },
+  {
+    "Second": 22,
+    "First": 15,
+    "Frequency": 44
+  },
+  {
+    "Second": 5,
+    "First": 2,
+    "Frequency": 44
+  },
+  {
+    "Second": 33,
+    "First": 10,
+    "Frequency": 44
+  },
+  {
+    "Second": 48,
+    "First": 38,
+    "Frequency": 44
+  },
+  {
+    "Second": 41,
+    "First": 38,
+    "Frequency": 44
+  },
+  {
+    "Second": 25,
+    "First": 19,
+    "Frequency": 44
+  },
+  {
+    "Second": 44,
+    "First": 11,
+    "Frequency": 44
+  },
+  {
+    "Second": 35,
+    "First": 17,
+    "Frequency": 44
+  },
+  {
+    "Second": 34,
+    "First": 22,
+    "Frequency": 44
+  },
+  {
+    "Second": 22,
+    "First": 17,
+    "Frequency": 44
+  },
+  {
+    "Second": 18,
+    "First": 4,
+    "Frequency": 44
+  },
+  {
+    "Second": 37,
+    "First": 3,
+    "Frequency": 44
+  },
+  {
+    "Second": 29,
+    "First": 13,
+    "Frequency": 44
+  },
+  {
+    "Second": 21,
+    "First": 20,
+    "Frequency": 44
+  },
+  {
+    "Second": 10,
+    "First": 9,
+    "Frequency": 44
+  },
+  {
+    "Second": 48,
+    "First": 27,
+    "Frequency": 44
+  },
+  {
+    "Second": 37,
+    "First": 27,
+    "Frequency": 44
+  },
+  {
+    "Second": 14,
+    "First": 10,
+    "Frequency": 44
+  },
+  {
+    "Second": 10,
+    "First": 1,
+    "Frequency": 44
+  },
+  {
+    "Second": 42,
+    "First": 13,
+    "Frequency": 44
+  },
+  {
+    "Second": 33,
+    "First": 27,
+    "Frequency": 44
+  },
+  {
+    "Second": 9,
+    "First": 6,
+    "Frequency": 44
+  },
+  {
+    "Second": 16,
+    "First": 4,
+    "Frequency": 44
+  },
+  {
+    "Second": 31,
+    "First": 12,
+    "Frequency": 44
+  },
+  {
+    "Second": 37,
+    "First": 24,
+    "Frequency": 44
+  },
+  {
+    "Second": 6,
+    "First": 1,
+    "Frequency": 44
+  },
+  {
+    "Second": 40,
+    "First": 34,
+    "Frequency": 44
+  },
+  {
+    "Second": 15,
+    "First": 8,
+    "Frequency": 44
+  },
+  {
+    "Second": 42,
+    "First": 17,
+    "Frequency": 44
+  },
+  {
+    "Second": 29,
+    "First": 9,
+    "Frequency": 44
+  },
+  {
+    "Second": 11,
+    "First": 3,
+    "Frequency": 44
+  },
+  {
+    "Second": 41,
+    "First": 40,
+    "Frequency": 44
+  },
+  {
+    "Second": 49,
+    "First": 26,
+    "Frequency": 44
+  },
+  {
+    "Second": 45,
+    "First": 26,
+    "Frequency": 44
+  },
+  {
+    "Second": 23,
+    "First": 12,
+    "Frequency": 44
+  },
+  {
+    "Second": 32,
+    "First": 30,
+    "Frequency": 44
+  },
+  {
+    "Second": 28,
+    "First": 18,
+    "Frequency": 44
+  },
+  {
+    "Second": 36,
+    "First": 23,
+    "Frequency": 44
+  },
+  {
+    "Second": 42,
+    "First": 39,
+    "Frequency": 44
+  },
+  {
+    "Second": 42,
+    "First": 12,
+    "Frequency": 44
+  },
+  {
+    "Second": 28,
+    "First": 26,
+    "Frequency": 44
+  },
+  {
+    "Second": 32,
+    "First": 28,
+    "Frequency": 44
+  },
+  {
+    "Second": 49,
+    "First": 8,
+    "Frequency": 44
+  },
+  {
+    "Second": 13,
+    "First": 5,
+    "Frequency": 44
+  },
+  {
+    "Second": 27,
+    "First": 24,
+    "Frequency": 44
+  },
+  {
+    "Second": 44,
+    "First": 7,
+    "Frequency": 44
+  },
+  {
+    "Second": 14,
+    "First": 5,
+    "Frequency": 44
+  },
+  {
+    "Second": 8,
+    "First": 4,
+    "Frequency": 44
+  },
+  {
+    "Second": 20,
+    "First": 1,
+    "Frequency": 44
+  },
+  {
+    "Second": 26,
+    "First": 6,
+    "Frequency": 44
+  },
+  {
+    "Second": 46,
+    "First": 20,
+    "Frequency": 44
+  },
+  {
+    "Second": 24,
+    "First": 8,
+    "Frequency": 43
+  },
+  {
+    "Second": 18,
+    "First": 14,
+    "Frequency": 43
+  },
+  {
+    "Second": 19,
+    "First": 2,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 19,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 11,
+    "Frequency": 43
+  },
+  {
+    "Second": 18,
+    "First": 8,
+    "Frequency": 43
+  },
+  {
+    "Second": 42,
+    "First": 33,
+    "Frequency": 43
+  },
+  {
+    "Second": 40,
+    "First": 28,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 21,
+    "Frequency": 43
+  },
+  {
+    "Second": 38,
+    "First": 30,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 13,
+    "Frequency": 43
+  },
+  {
+    "Second": 30,
+    "First": 13,
+    "Frequency": 43
+  },
+  {
+    "Second": 21,
+    "First": 19,
+    "Frequency": 43
+  },
+  {
+    "Second": 33,
+    "First": 17,
+    "Frequency": 43
+  },
+  {
+    "Second": 35,
+    "First": 16,
+    "Frequency": 43
+  },
+  {
+    "Second": 31,
+    "First": 22,
+    "Frequency": 43
+  },
+  {
+    "Second": 48,
+    "First": 47,
+    "Frequency": 43
+  },
+  {
+    "Second": 24,
+    "First": 12,
+    "Frequency": 43
+  },
+  {
+    "Second": 49,
+    "First": 34,
+    "Frequency": 43
+  },
+  {
+    "Second": 49,
+    "First": 29,
+    "Frequency": 43
+  },
+  {
+    "Second": 5,
+    "First": 4,
+    "Frequency": 43
+  },
+  {
+    "Second": 45,
+    "First": 22,
+    "Frequency": 43
+  },
+  {
+    "Second": 27,
+    "First": 8,
+    "Frequency": 43
+  },
+  {
+    "Second": 46,
+    "First": 12,
+    "Frequency": 43
+  },
+  {
+    "Second": 19,
+    "First": 18,
+    "Frequency": 43
+  },
+  {
+    "Second": 11,
+    "First": 6,
+    "Frequency": 43
+  },
+  {
+    "Second": 41,
+    "First": 6,
+    "Frequency": 43
+  },
+  {
+    "Second": 45,
+    "First": 15,
+    "Frequency": 43
+  },
+  {
+    "Second": 26,
+    "First": 8,
+    "Frequency": 43
+  },
+  {
+    "Second": 18,
+    "First": 13,
+    "Frequency": 43
+  },
+  {
+    "Second": 30,
+    "First": 23,
+    "Frequency": 43
+  },
+  {
+    "Second": 16,
+    "First": 1,
+    "Frequency": 43
+  },
+  {
+    "Second": 36,
+    "First": 16,
+    "Frequency": 43
+  },
+  {
+    "Second": 32,
+    "First": 2,
+    "Frequency": 43
+  },
+  {
+    "Second": 44,
+    "First": 39,
+    "Frequency": 43
+  },
+  {
+    "Second": 43,
+    "First": 13,
+    "Frequency": 43
+  },
+  {
+    "Second": 33,
+    "First": 16,
+    "Frequency": 43
+  },
+  {
+    "Second": 42,
+    "First": 31,
+    "Frequency": 43
+  },
+  {
+    "Second": 20,
+    "First": 5,
+    "Frequency": 43
+  },
+  {
+    "Second": 48,
+    "First": 32,
+    "Frequency": 43
+  },
+  {
+    "Second": 48,
+    "First": 42,
+    "Frequency": 43
+  },
+  {
+    "Second": 27,
+    "First": 25,
+    "Frequency": 43
+  },
+  {
+    "Second": 29,
+    "First": 10,
+    "Frequency": 43
+  },
+  {
+    "Second": 19,
+    "First": 4,
+    "Frequency": 43
+  },
+  {
+    "Second": 37,
+    "First": 32,
+    "Frequency": 43
+  },
+  {
+    "Second": 47,
+    "First": 37,
+    "Frequency": 43
+  },
+  {
+    "Second": 44,
+    "First": 41,
+    "Frequency": 43
+  },
+  {
+    "Second": 32,
+    "First": 4,
+    "Frequency": 43
+  },
+  {
+    "Second": 37,
+    "First": 15,
+    "Frequency": 43
+  },
+  {
+    "Second": 31,
+    "First": 11,
+    "Frequency": 43
+  },
+  {
+    "Second": 37,
+    "First": 31,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 9,
+    "Frequency": 43
+  },
+  {
+    "Second": 13,
+    "First": 9,
+    "Frequency": 43
+  },
+  {
+    "Second": 46,
+    "First": 17,
+    "Frequency": 43
+  },
+  {
+    "Second": 33,
+    "First": 9,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 24,
+    "Frequency": 43
+  },
+  {
+    "Second": 39,
+    "First": 37,
+    "Frequency": 43
+  },
+  {
+    "Second": 14,
+    "First": 11,
+    "Frequency": 43
+  },
+  {
+    "Second": 32,
+    "First": 16,
+    "Frequency": 43
+  },
+  {
+    "Second": 35,
+    "First": 4,
+    "Frequency": 43
+  },
+  {
+    "Second": 47,
+    "First": 39,
+    "Frequency": 43
+  },
+  {
+    "Second": 26,
+    "First": 1,
+    "Frequency": 43
+  },
+  {
+    "Second": 34,
+    "First": 25,
+    "Frequency": 43
+  },
+  {
+    "Second": 26,
+    "First": 15,
+    "Frequency": 43
+  },
+  {
+    "Second": 19,
+    "First": 7,
+    "Frequency": 43
+  },
+  {
+    "Second": 17,
+    "First": 13,
+    "Frequency": 43
+  },
+  {
+    "Second": 46,
+    "First": 14,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 19,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 10,
+    "Frequency": 42
+  },
+  {
+    "Second": 11,
+    "First": 5,
+    "Frequency": 42
+  },
+  {
+    "Second": 37,
+    "First": 11,
+    "Frequency": 42
+  },
+  {
+    "Second": 43,
+    "First": 39,
+    "Frequency": 42
+  },
+  {
+    "Second": 39,
+    "First": 26,
+    "Frequency": 42
+  },
+  {
+    "Second": 21,
+    "First": 13,
+    "Frequency": 42
+  },
+  {
+    "Second": 46,
+    "First": 2,
+    "Frequency": 42
+  },
+  {
+    "Second": 29,
+    "First": 2,
+    "Frequency": 42
+  },
+  {
+    "Second": 30,
+    "First": 24,
+    "Frequency": 42
+  },
+  {
+    "Second": 35,
+    "First": 30,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 21,
+    "Frequency": 42
+  },
+  {
+    "Second": 21,
+    "First": 6,
+    "Frequency": 42
+  },
+  {
+    "Second": 34,
+    "First": 7,
+    "Frequency": 42
+  },
+  {
+    "Second": 47,
+    "First": 11,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 28,
+    "Frequency": 42
+  },
+  {
+    "Second": 23,
+    "First": 6,
+    "Frequency": 42
+  },
+  {
+    "Second": 25,
+    "First": 15,
+    "Frequency": 42
+  },
+  {
+    "Second": 18,
+    "First": 1,
+    "Frequency": 42
+  },
+  {
+    "Second": 21,
+    "First": 14,
+    "Frequency": 42
+  },
+  {
+    "Second": 36,
+    "First": 28,
+    "Frequency": 42
+  },
+  {
+    "Second": 39,
+    "First": 27,
+    "Frequency": 42
+  },
+  {
+    "Second": 36,
+    "First": 1,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 14,
+    "Frequency": 42
+  },
+  {
+    "Second": 30,
+    "First": 29,
+    "Frequency": 42
+  },
+  {
+    "Second": 49,
+    "First": 13,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 13,
+    "Frequency": 42
+  },
+  {
+    "Second": 32,
+    "First": 1,
+    "Frequency": 42
+  },
+  {
+    "Second": 33,
+    "First": 13,
+    "Frequency": 42
+  },
+  {
+    "Second": 18,
+    "First": 11,
+    "Frequency": 42
+  },
+  {
+    "Second": 18,
+    "First": 17,
+    "Frequency": 42
+  },
+  {
+    "Second": 42,
+    "First": 7,
+    "Frequency": 42
+  },
+  {
+    "Second": 35,
+    "First": 18,
+    "Frequency": 42
+  },
+  {
+    "Second": 32,
+    "First": 3,
+    "Frequency": 42
+  },
+  {
+    "Second": 36,
+    "First": 6,
+    "Frequency": 42
+  },
+  {
+    "Second": 15,
+    "First": 6,
+    "Frequency": 42
+  },
+  {
+    "Second": 30,
+    "First": 3,
+    "Frequency": 42
+  },
+  {
+    "Second": 8,
+    "First": 6,
+    "Frequency": 42
+  },
+  {
+    "Second": 27,
+    "First": 17,
+    "Frequency": 42
+  },
+  {
+    "Second": 37,
+    "First": 17,
+    "Frequency": 42
+  },
+  {
+    "Second": 21,
+    "First": 11,
+    "Frequency": 42
+  },
+  {
+    "Second": 33,
+    "First": 15,
+    "Frequency": 42
+  },
+  {
+    "Second": 14,
+    "First": 6,
+    "Frequency": 42
+  },
+  {
+    "Second": 41,
+    "First": 11,
+    "Frequency": 42
+  },
+  {
+    "Second": 44,
+    "First": 9,
+    "Frequency": 42
+  },
+  {
+    "Second": 30,
+    "First": 20,
+    "Frequency": 42
+  },
+  {
+    "Second": 49,
+    "First": 18,
+    "Frequency": 42
+  },
+  {
+    "Second": 28,
+    "First": 12,
+    "Frequency": 42
+  },
+  {
+    "Second": 39,
+    "First": 5,
+    "Frequency": 42
+  },
+  {
+    "Second": 28,
+    "First": 3,
+    "Frequency": 42
+  },
+  {
+    "Second": 25,
+    "First": 8,
+    "Frequency": 42
+  },
+  {
+    "Second": 36,
+    "First": 26,
+    "Frequency": 42
+  },
+  {
+    "Second": 42,
+    "First": 11,
+    "Frequency": 42
+  },
+  {
+    "Second": 25,
+    "First": 5,
+    "Frequency": 42
+  },
+  {
+    "Second": 42,
+    "First": 28,
+    "Frequency": 42
+  },
+  {
+    "Second": 26,
+    "First": 5,
+    "Frequency": 42
+  },
+  {
+    "Second": 15,
+    "First": 1,
+    "Frequency": 42
+  },
+  {
+    "Second": 38,
+    "First": 29,
+    "Frequency": 42
+  },
+  {
+    "Second": 48,
+    "First": 39,
+    "Frequency": 41
+  },
+  {
+    "Second": 32,
+    "First": 14,
+    "Frequency": 41
+  },
+  {
+    "Second": 41,
+    "First": 18,
+    "Frequency": 41
+  },
+  {
+    "Second": 41,
+    "First": 32,
+    "Frequency": 41
+  },
+  {
+    "Second": 49,
+    "First": 3,
+    "Frequency": 41
+  },
+  {
+    "Second": 39,
+    "First": 2,
+    "Frequency": 41
+  },
+  {
+    "Second": 38,
+    "First": 3,
+    "Frequency": 41
+  },
+  {
+    "Second": 10,
+    "First": 2,
+    "Frequency": 41
+  },
+  {
+    "Second": 37,
+    "First": 2,
+    "Frequency": 41
+  },
+  {
+    "Second": 33,
+    "First": 24,
+    "Frequency": 41
+  },
+  {
+    "Second": 12,
+    "First": 5,
+    "Frequency": 41
+  },
+  {
+    "Second": 43,
+    "First": 28,
+    "Frequency": 41
+  },
+  {
+    "Second": 49,
+    "First": 35,
+    "Frequency": 41
+  },
+  {
+    "Second": 48,
+    "First": 6,
+    "Frequency": 41
+  },
+  {
+    "Second": 35,
+    "First": 6,
+    "Frequency": 41
+  },
+  {
+    "Second": 26,
+    "First": 12,
+    "Frequency": 41
+  },
+  {
+    "Second": 41,
+    "First": 3,
+    "Frequency": 41
+  },
+  {
+    "Second": 15,
+    "First": 11,
+    "Frequency": 41
+  },
+  {
+    "Second": 23,
+    "First": 16,
+    "Frequency": 41
+  },
+  {
+    "Second": 39,
+    "First": 23,
+    "Frequency": 41
+  },
+  {
+    "Second": 37,
+    "First": 6,
+    "Frequency": 41
+  },
+  {
+    "Second": 36,
+    "First": 5,
+    "Frequency": 41
+  },
+  {
+    "Second": 12,
+    "First": 7,
+    "Frequency": 41
+  },
+  {
+    "Second": 13,
+    "First": 2,
+    "Frequency": 41
+  },
+  {
+    "Second": 44,
+    "First": 13,
+    "Frequency": 41
+  },
+  {
+    "Second": 37,
+    "First": 13,
+    "Frequency": 41
+  },
+  {
+    "Second": 47,
+    "First": 14,
+    "Frequency": 41
+  },
+  {
+    "Second": 36,
+    "First": 3,
+    "Frequency": 41
+  },
+  {
+    "Second": 30,
+    "First": 2,
+    "Frequency": 41
+  },
+  {
+    "Second": 48,
+    "First": 1,
+    "Frequency": 41
+  },
+  {
+    "Second": 16,
+    "First": 7,
+    "Frequency": 41
+  },
+  {
+    "Second": 46,
+    "First": 25,
+    "Frequency": 41
+  },
+  {
+    "Second": 17,
+    "First": 14,
+    "Frequency": 41
+  },
+  {
+    "Second": 40,
+    "First": 18,
+    "Frequency": 41
+  },
+  {
+    "Second": 44,
+    "First": 26,
+    "Frequency": 41
+  },
+  {
+    "Second": 29,
+    "First": 8,
+    "Frequency": 41
+  },
+  {
+    "Second": 29,
+    "First": 23,
+    "Frequency": 41
+  },
+  {
+    "Second": 39,
+    "First": 18,
+    "Frequency": 41
+  },
+  {
+    "Second": 38,
+    "First": 25,
+    "Frequency": 41
+  },
+  {
+    "Second": 26,
+    "First": 25,
+    "Frequency": 41
+  },
+  {
+    "Second": 47,
+    "First": 28,
+    "Frequency": 41
+  },
+  {
+    "Second": 48,
+    "First": 17,
+    "Frequency": 41
+  },
+  {
+    "Second": 15,
+    "First": 13,
+    "Frequency": 41
+  },
+  {
+    "Second": 29,
+    "First": 15,
+    "Frequency": 41
+  },
+  {
+    "Second": 29,
+    "First": 20,
+    "Frequency": 41
+  },
+  {
+    "Second": 43,
+    "First": 1,
+    "Frequency": 40
+  },
+  {
+    "Second": 5,
+    "First": 1,
+    "Frequency": 40
+  },
+  {
+    "Second": 18,
+    "First": 10,
+    "Frequency": 40
+  },
+  {
+    "Second": 41,
+    "First": 36,
+    "Frequency": 40
+  },
+  {
+    "Second": 22,
+    "First": 7,
+    "Frequency": 40
+  },
+  {
+    "Second": 28,
+    "First": 22,
+    "Frequency": 40
+  },
+  {
+    "Second": 43,
+    "First": 15,
+    "Frequency": 40
+  },
+  {
+    "Second": 21,
+    "First": 2,
+    "Frequency": 40
+  },
+  {
+    "Second": 49,
+    "First": 19,
+    "Frequency": 40
+  },
+  {
+    "Second": 29,
+    "First": 16,
+    "Frequency": 40
+  },
+  {
+    "Second": 47,
+    "First": 16,
+    "Frequency": 40
+  },
+  {
+    "Second": 32,
+    "First": 5,
+    "Frequency": 40
+  },
+  {
+    "Second": 41,
+    "First": 22,
+    "Frequency": 40
+  },
+  {
+    "Second": 27,
+    "First": 5,
+    "Frequency": 40
+  },
+  {
+    "Second": 17,
+    "First": 12,
+    "Frequency": 40
+  },
+  {
+    "Second": 24,
+    "First": 22,
+    "Frequency": 40
+  },
+  {
+    "Second": 25,
+    "First": 9,
+    "Frequency": 40
+  },
+  {
+    "Second": 22,
+    "First": 1,
+    "Frequency": 40
+  },
+  {
+    "Second": 30,
+    "First": 14,
+    "Frequency": 40
+  },
+  {
+    "Second": 47,
+    "First": 1,
+    "Frequency": 40
+  },
+  {
+    "Second": 38,
+    "First": 14,
+    "Frequency": 40
+  },
+  {
+    "Second": 44,
+    "First": 18,
+    "Frequency": 40
+  },
+  {
+    "Second": 35,
+    "First": 14,
+    "Frequency": 40
+  },
+  {
+    "Second": 35,
+    "First": 27,
+    "Frequency": 40
+  },
+  {
+    "Second": 36,
+    "First": 15,
+    "Frequency": 40
+  },
+  {
+    "Second": 12,
+    "First": 6,
+    "Frequency": 40
+  },
+  {
+    "Second": 48,
+    "First": 44,
+    "Frequency": 40
+  },
+  {
+    "Second": 11,
+    "First": 1,
+    "Frequency": 40
+  },
+  {
+    "Second": 11,
+    "First": 7,
+    "Frequency": 40
+  },
+  {
+    "Second": 13,
+    "First": 6,
+    "Frequency": 40
+  },
+  {
+    "Second": 21,
+    "First": 15,
+    "Frequency": 40
+  },
+  {
+    "Second": 40,
+    "First": 26,
+    "Frequency": 40
+  },
+  {
+    "Second": 13,
+    "First": 12,
+    "Frequency": 40
+  },
+  {
+    "Second": 44,
+    "First": 28,
+    "Frequency": 40
+  },
+  {
+    "Second": 33,
+    "First": 18,
+    "Frequency": 40
+  },
+  {
+    "Second": 44,
+    "First": 24,
+    "Frequency": 40
+  },
+  {
+    "Second": 41,
+    "First": 7,
+    "Frequency": 40
+  },
+  {
+    "Second": 30,
+    "First": 15,
+    "Frequency": 40
+  },
+  {
+    "Second": 44,
+    "First": 36,
+    "Frequency": 40
+  },
+  {
+    "Second": 29,
+    "First": 28,
+    "Frequency": 40
+  },
+  {
+    "Second": 49,
+    "First": 27,
+    "Frequency": 40
+  },
+  {
+    "Second": 38,
+    "First": 8,
+    "Frequency": 40
+  },
+  {
+    "Second": 29,
+    "First": 27,
+    "Frequency": 40
+  },
+  {
+    "Second": 32,
+    "First": 20,
+    "Frequency": 40
+  },
+  {
+    "Second": 37,
+    "First": 16,
+    "Frequency": 40
+  },
+  {
+    "Second": 39,
+    "First": 15,
+    "Frequency": 40
+  },
+  {
+    "Second": 36,
+    "First": 35,
+    "Frequency": 40
+  },
+  {
+    "Second": 47,
+    "First": 24,
+    "Frequency": 40
+  },
+  {
+    "Second": 17,
+    "First": 1,
+    "Frequency": 40
+  },
+  {
+    "Second": 43,
+    "First": 42,
+    "Frequency": 40
+  },
+  {
+    "Second": 45,
+    "First": 14,
+    "Frequency": 40
+  },
+  {
+    "Second": 44,
+    "First": 22,
+    "Frequency": 40
+  },
+  {
+    "Second": 25,
+    "First": 17,
+    "Frequency": 39
+  },
+  {
+    "Second": 43,
+    "First": 25,
+    "Frequency": 39
+  },
+  {
+    "Second": 41,
+    "First": 14,
+    "Frequency": 39
+  },
+  {
+    "Second": 18,
+    "First": 9,
+    "Frequency": 39
+  },
+  {
+    "Second": 28,
+    "First": 19,
+    "Frequency": 39
+  },
+  {
+    "Second": 48,
+    "First": 18,
+    "Frequency": 39
+  },
+  {
+    "Second": 42,
+    "First": 4,
+    "Frequency": 39
+  },
+  {
+    "Second": 37,
+    "First": 33,
+    "Frequency": 39
+  },
+  {
+    "Second": 33,
+    "First": 12,
+    "Frequency": 39
+  },
+  {
+    "Second": 26,
+    "First": 24,
+    "Frequency": 39
+  },
+  {
+    "Second": 17,
+    "First": 10,
+    "Frequency": 39
+  },
+  {
+    "Second": 42,
+    "First": 5,
+    "Frequency": 39
+  },
+  {
+    "Second": 30,
+    "First": 18,
+    "Frequency": 39
+  },
+  {
+    "Second": 49,
+    "First": 4,
+    "Frequency": 39
+  },
+  {
+    "Second": 19,
+    "First": 6,
+    "Frequency": 39
+  },
+  {
+    "Second": 38,
+    "First": 11,
+    "Frequency": 39
+  },
+  {
+    "Second": 41,
+    "First": 29,
+    "Frequency": 39
+  },
+  {
+    "Second": 43,
+    "First": 33,
+    "Frequency": 39
+  },
+  {
+    "Second": 9,
+    "First": 3,
+    "Frequency": 39
+  },
+  {
+    "Second": 35,
+    "First": 3,
+    "Frequency": 39
+  },
+  {
+    "Second": 41,
+    "First": 35,
+    "Frequency": 39
+  },
+  {
+    "Second": 48,
+    "First": 43,
+    "Frequency": 39
+  },
+  {
+    "Second": 13,
+    "First": 10,
+    "Frequency": 39
+  },
+  {
+    "Second": 24,
+    "First": 11,
+    "Frequency": 39
+  },
+  {
+    "Second": 32,
+    "First": 10,
+    "Frequency": 39
+  },
+  {
+    "Second": 18,
+    "First": 6,
+    "Frequency": 39
+  },
+  {
+    "Second": 33,
+    "First": 7,
+    "Frequency": 39
+  },
+  {
+    "Second": 15,
+    "First": 2,
+    "Frequency": 39
+  },
+  {
+    "Second": 30,
+    "First": 9,
+    "Frequency": 39
+  },
+  {
+    "Second": 25,
+    "First": 1,
+    "Frequency": 39
+  },
+  {
+    "Second": 28,
+    "First": 14,
+    "Frequency": 39
+  },
+  {
+    "Second": 15,
+    "First": 10,
+    "Frequency": 39
+  },
+  {
+    "Second": 20,
+    "First": 13,
+    "Frequency": 39
+  },
+  {
+    "Second": 36,
+    "First": 9,
+    "Frequency": 39
+  },
+  {
+    "Second": 47,
+    "First": 13,
+    "Frequency": 39
+  },
+  {
+    "Second": 14,
+    "First": 9,
+    "Frequency": 38
+  },
+  {
+    "Second": 33,
+    "First": 2,
+    "Frequency": 38
+  },
+  {
+    "Second": 28,
+    "First": 8,
+    "Frequency": 38
+  },
+  {
+    "Second": 28,
+    "First": 5,
+    "Frequency": 38
+  },
+  {
+    "Second": 26,
+    "First": 14,
+    "Frequency": 38
+  },
+  {
+    "Second": 30,
+    "First": 26,
+    "Frequency": 38
+  },
+  {
+    "Second": 21,
+    "First": 8,
+    "Frequency": 38
+  },
+  {
+    "Second": 42,
+    "First": 26,
+    "Frequency": 38
+  },
+  {
+    "Second": 29,
+    "First": 14,
+    "Frequency": 38
+  },
+  {
+    "Second": 46,
+    "First": 10,
+    "Frequency": 38
+  },
+  {
+    "Second": 35,
+    "First": 1,
+    "Frequency": 38
+  },
+  {
+    "Second": 14,
+    "First": 12,
+    "Frequency": 38
+  },
+  {
+    "Second": 26,
+    "First": 19,
+    "Frequency": 38
+  },
+  {
+    "Second": 36,
+    "First": 13,
+    "Frequency": 38
+  },
+  {
+    "Second": 36,
+    "First": 14,
+    "Frequency": 38
+  },
+  {
+    "Second": 36,
+    "First": 11,
+    "Frequency": 38
+  },
+  {
+    "Second": 44,
+    "First": 5,
+    "Frequency": 38
+  },
+  {
+    "Second": 37,
+    "First": 35,
+    "Frequency": 38
+  },
+  {
+    "Second": 24,
+    "First": 18,
+    "Frequency": 38
+  },
+  {
+    "Second": 23,
+    "First": 14,
+    "Frequency": 38
+  },
+  {
+    "Second": 37,
+    "First": 4,
+    "Frequency": 38
+  },
+  {
+    "Second": 37,
+    "First": 25,
+    "Frequency": 38
+  },
+  {
+    "Second": 36,
+    "First": 8,
+    "Frequency": 38
+  },
+  {
+    "Second": 44,
+    "First": 33,
+    "Frequency": 38
+  },
+  {
+    "Second": 24,
+    "First": 16,
+    "Frequency": 38
+  },
+  {
+    "Second": 6,
+    "First": 2,
+    "Frequency": 38
+  },
+  {
+    "Second": 17,
+    "First": 7,
+    "Frequency": 38
+  },
+  {
+    "Second": 29,
+    "First": 7,
+    "Frequency": 38
+  },
+  {
+    "Second": 14,
+    "First": 7,
+    "Frequency": 37
+  },
+  {
+    "Second": 17,
+    "First": 2,
+    "Frequency": 37
+  },
+  {
+    "Second": 48,
+    "First": 11,
+    "Frequency": 37
+  },
+  {
+    "Second": 42,
+    "First": 30,
+    "Frequency": 37
+  },
+  {
+    "Second": 49,
+    "First": 6,
+    "Frequency": 37
+  },
+  {
+    "Second": 41,
+    "First": 5,
+    "Frequency": 37
+  },
+  {
+    "Second": 27,
+    "First": 12,
+    "Frequency": 37
+  },
+  {
+    "Second": 37,
+    "First": 19,
+    "Frequency": 37
+  },
+  {
+    "Second": 42,
+    "First": 23,
+    "Frequency": 37
+  },
+  {
+    "Second": 29,
+    "First": 4,
+    "Frequency": 37
+  },
+  {
+    "Second": 29,
+    "First": 25,
+    "Frequency": 37
+  },
+  {
+    "Second": 25,
+    "First": 3,
+    "Frequency": 37
+  },
+  {
+    "Second": 22,
+    "First": 11,
+    "Frequency": 37
+  },
+  {
+    "Second": 23,
+    "First": 9,
+    "Frequency": 37
+  },
+  {
+    "Second": 14,
+    "First": 13,
+    "Frequency": 37
+  },
+  {
+    "Second": 28,
+    "First": 6,
+    "Frequency": 37
+  },
+  {
+    "Second": 35,
+    "First": 28,
+    "Frequency": 37
+  },
+  {
+    "Second": 29,
+    "First": 6,
+    "Frequency": 37
+  },
+  {
+    "Second": 22,
+    "First": 5,
+    "Frequency": 37
+  },
+  {
+    "Second": 49,
+    "First": 5,
+    "Frequency": 37
+  },
+  {
+    "Second": 18,
+    "First": 12,
+    "Frequency": 37
+  },
+  {
+    "Second": 19,
+    "First": 15,
+    "Frequency": 37
+  },
+  {
+    "Second": 14,
+    "First": 8,
+    "Frequency": 36
+  },
+  {
+    "Second": 24,
+    "First": 14,
+    "Frequency": 36
+  },
+  {
+    "Second": 35,
+    "First": 11,
+    "Frequency": 36
+  },
+  {
+    "Second": 46,
+    "First": 44,
+    "Frequency": 36
+  },
+  {
+    "Second": 38,
+    "First": 13,
+    "Frequency": 36
+  },
+  {
+    "Second": 16,
+    "First": 15,
+    "Frequency": 36
+  },
+  {
+    "Second": 15,
+    "First": 5,
+    "Frequency": 36
+  },
+  {
+    "Second": 32,
+    "First": 11,
+    "Frequency": 36
+  },
+  {
+    "Second": 26,
+    "First": 11,
+    "Frequency": 36
+  },
+  {
+    "Second": 49,
+    "First": 38,
+    "Frequency": 36
+  },
+  {
+    "Second": 38,
+    "First": 37,
+    "Frequency": 36
+  },
+  {
+    "Second": 10,
+    "First": 3,
+    "Frequency": 36
+  },
+  {
+    "Second": 30,
+    "First": 16,
+    "Frequency": 36
+  },
+  {
+    "Second": 34,
+    "First": 10,
+    "Frequency": 36
+  },
+  {
+    "Second": 23,
+    "First": 11,
+    "Frequency": 36
+  },
+  {
+    "Second": 16,
+    "First": 9,
+    "Frequency": 36
+  },
+  {
+    "Second": 11,
+    "First": 8,
+    "Frequency": 36
+  },
+  {
+    "Second": 39,
+    "First": 14,
+    "Frequency": 36
+  },
+  {
+    "Second": 21,
+    "First": 1,
+    "Frequency": 36
+  },
+  {
+    "Second": 18,
+    "First": 15,
+    "Frequency": 36
+  },
+  {
+    "Second": 47,
+    "First": 30,
+    "Frequency": 36
+  },
+  {
+    "Second": 46,
+    "First": 1,
+    "Frequency": 36
+  },
+  {
+    "Second": 28,
+    "First": 25,
+    "Frequency": 36
+  },
+  {
+    "Second": 19,
+    "First": 5,
+    "Frequency": 35
+  },
+  {
+    "Second": 26,
+    "First": 2,
+    "Frequency": 35
+  },
+  {
+    "Second": 25,
+    "First": 10,
+    "Frequency": 35
+  },
+  {
+    "Second": 12,
+    "First": 10,
+    "Frequency": 35
+  },
+  {
+    "Second": 14,
+    "First": 2,
+    "Frequency": 35
+  },
+  {
+    "Second": 35,
+    "First": 8,
+    "Frequency": 35
+  },
+  {
+    "Second": 25,
+    "First": 6,
+    "Frequency": 35
+  },
+  {
+    "Second": 37,
+    "First": 14,
+    "Frequency": 35
+  },
+  {
+    "Second": 45,
+    "First": 6,
+    "Frequency": 35
+  },
+  {
+    "Second": 39,
+    "First": 3,
+    "Frequency": 35
+  },
+  {
+    "Second": 48,
+    "First": 15,
+    "Frequency": 35
+  },
+  {
+    "Second": 13,
+    "First": 1,
+    "Frequency": 35
+  },
+  {
+    "Second": 16,
+    "First": 8,
+    "Frequency": 35
+  },
+  {
+    "Second": 24,
+    "First": 9,
+    "Frequency": 34
+  },
+  {
+    "Second": 17,
+    "First": 8,
+    "Frequency": 34
+  },
+  {
+    "Second": 46,
+    "First": 18,
+    "Frequency": 34
+  },
+  {
+    "Second": 37,
+    "First": 23,
+    "Frequency": 34
+  },
+  {
+    "Second": 45,
+    "First": 18,
+    "Frequency": 34
+  },
+  {
+    "Second": 28,
+    "First": 2,
+    "Frequency": 34
+  },
+  {
+    "Second": 39,
+    "First": 28,
+    "Frequency": 33
+  },
+  {
+    "Second": 49,
+    "First": 25,
+    "Frequency": 33
+  },
+  {
+    "Second": 16,
+    "First": 6,
+    "Frequency": 33
+  },
+  {
+    "Second": 9,
+    "First": 1,
+    "Frequency": 33
+  },
+  {
+    "Second": 18,
+    "First": 5,
+    "Frequency": 33
+  },
+  {
+    "Second": 22,
+    "First": 10,
+    "Frequency": 33
+  },
+  {
+    "Second": 33,
+    "First": 28,
+    "Frequency": 33
+  },
+  {
+    "Second": 4,
+    "First": 2,
+    "Frequency": 33
+  },
+  {
+    "Second": 4,
+    "First": 1,
+    "Frequency": 33
+  },
+  {
+    "Second": 42,
+    "First": 16,
+    "Frequency": 33
+  },
+  {
+    "Second": 16,
+    "First": 5,
+    "Frequency": 32
+  },
+  {
+    "Second": 23,
+    "First": 5,
+    "Frequency": 32
+  },
+  {
+    "Second": 28,
+    "First": 1,
+    "Frequency": 32
+  },
+  {
+    "Second": 33,
+    "First": 14,
+    "Frequency": 32
+  },
+  {
+    "Second": 12,
+    "First": 1,
+    "Frequency": 32
+  },
+  {
+    "Second": 32,
+    "First": 23,
+    "Frequency": 32
+  },
+  {
+    "Second": 38,
+    "First": 18,
+    "Frequency": 32
+  },
+  {
+    "Second": 48,
+    "First": 5,
+    "Frequency": 32
+  },
+  {
+    "Second": 19,
+    "First": 8,
+    "Frequency": 31
+  },
+  {
+    "Second": 39,
+    "First": 35,
+    "Frequency": 31
+  },
+  {
+    "Second": 13,
+    "First": 11,
+    "Frequency": 30
+  },
+  {
+    "Second": 15,
+    "First": 14,
+    "Frequency": 28
+  },
+  {
+    "Second": 22,
+    "First": 14,
+    "Frequency": 27
+  },
+  {
+    "Second": 25,
+    "First": 13,
+    "Frequency": 27
+  },
+  {
+    "Second": 42,
+    "First": 3,
+    "Frequency": 26
+  }
+]
