@@ -60,8 +60,8 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
                 var newItm = itm.Replace(itm, itm.TrimStart(new[] { '0' }));
                 newLottoNumList.Add(newItm);
             }
-            var bonusNum = newLottoNumList[6];
-            newLottoNumList.RemoveAt(6);
+            var bonusNum = newLottoNumList.Last();
+            newLottoNumList.Remove(bonusNum);
 
             var lotto649DrawNums = string.Join(", ", newLottoNumList);
 

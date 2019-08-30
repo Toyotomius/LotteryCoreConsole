@@ -8,7 +8,7 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
 {
     /// <summary>
     ///     Scrapes the Atlantic Lottery Corporation Website @ https://www.alc.ca/content/alc/en/winning-numbers.html for the
-    ///     winning Lotto649 numbers. Draws every Wed and Sat.
+    ///     winning LottoMax numbers. Draws every Tue and Fri.
     /// </summary>
     public class LottoMaxScrape : ILotteryScrape
     {
@@ -58,8 +58,8 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.WebsiteScraping
                 var newItm = itm.Replace(itm, itm.TrimStart(new[] { '0' }));
                 newLottoNumList.Add(newItm);
             }
-            var bonusNum = tempList[7];
-            tempList.RemoveAt(7);
+            var bonusNum = newLottoNumList.Last();
+            newLottoNumList.Remove(bonusNum);
 
             var lottoMaxDrawNums = string.Join(", ", newLottoNumList);
 
