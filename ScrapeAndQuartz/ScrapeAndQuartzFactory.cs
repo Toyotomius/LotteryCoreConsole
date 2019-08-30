@@ -35,8 +35,13 @@ namespace LotteryCoreConsole.ScrapeAndQuartz
             return new LottoMaxScrape(CreateWebsiteScraping(), CreateFormatNewLotteryResult(),
                 CreateWriteNewLottoResult(), CreateAfterLottoWritten());
         }
+        public static ILotteryScrape CreatePowerballScrape()
+        {
+            return new PowerballScrape(CreateFormatNewLotteryResult(),
+                CreateWriteNewLottoResult(), CreateAfterLottoWritten());
+        }
 
-        public static IWebsiteScraping CreateWebsiteScraping()
+            public static IWebsiteScraping CreateWebsiteScraping()
         {
             return new WebsiteScraping.WebsiteScraping(CreateUserAgentPicker());
         }

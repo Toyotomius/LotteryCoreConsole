@@ -1,6 +1,7 @@
 ﻿using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.Lotto649;
 using LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.LottoMax;
+using LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.USPowerball;
 using Newtonsoft.Json.Linq;
 using Quartz;
 using Quartz.Impl;
@@ -30,9 +31,6 @@ namespace LotteryCoreConsole
             // TODO: Check against settings file to see which website scraping tasks need to be scheduled.
             if (scrapeWebsites)
             {
-                // TODO: Remove below comments. There for testing only.
-                //var lottoScrape = ScrapeAndQuartz.ScrapeAndQuartzFactory.CreateLotto649Scrape();
-                //await lottoScrape.ScrapeLotteryAsync();
                 Console.WriteLine("ScrapeWebsites = True");
 
                 var props = new NameValueCollection
@@ -46,6 +44,7 @@ namespace LotteryCoreConsole
 
                 await Lotto649Schedule.Lotto649Scheduler(scheduler);
                 await LottoMaxSchedule.LottoMaxScheduler(scheduler);
+                await USPowerballSchedule.USPowerballScheduler(scheduler);
             }
 
             //Console.ReadKey();
