@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
+﻿using LotteryCoreConsole.Lottery_Calculation.GetSetObjects;
 using LotteryCoreConsole.Lottery_Calculation.Interfaces;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LotteryCoreConsole.Lottery_Calculation
 {
@@ -16,12 +15,14 @@ namespace LotteryCoreConsole.Lottery_Calculation
             //TODO: Find a better way of doing this.
             // Iterates through the lottery JObject and returns an ordered list of <string Date, int[] Numbers> to be manipulated.
             for (var i = 0; i < lotteryData[lotteryName].Count(); i++)
+            {
                 _lottoData.Add(new LottoData
                 {
                     Date = lotteryData[lotteryName][i]["Date"].ToString(),
                     Numbers = lotteryData[lotteryName][i]["Numbers"].Select(x => (int)x).ToArray(),
                     Bonus = lotteryData[lotteryName][i]["Bonus"].ToObject<int>()
                 });
+            }
 
             return _lottoData;
         }

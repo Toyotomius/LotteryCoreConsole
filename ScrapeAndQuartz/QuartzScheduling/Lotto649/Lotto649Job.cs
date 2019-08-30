@@ -17,10 +17,10 @@ namespace LotteryCoreConsole.ScrapeAndQuartz.QuartzScheduling.Lotto649
         /// <returns></returns>
         public async Task Execute(IJobExecutionContext context)
         {
-            ILotteryScrape lotto649Scrape = ScrapeAndQuartzFactory.CreateLotto649Scrape();
+            ILotteryScrape lotteryScrape = ScrapeAndQuartzFactory.CreateLotto649Scrape();
             // TODO: Better logging.
             Console.WriteLine($"{DateTime.Now} : Starting Lotto649 Scrape");
-            await lotto649Scrape.ScrapeLotteryAsync();
+            await lotteryScrape.ScrapeLotteryAsync();
         }
     }
 }
