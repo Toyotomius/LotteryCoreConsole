@@ -10,11 +10,13 @@ namespace LotteryCoreConsole.Lottery_Calculation
         public IEnumerable<int[]> AllNumbers { get; set; } // Selects all the number arrays from the list.
 
         public IEnumerable<int> DistinctNumbers { get; set; } // Grabs just the distinct numbers in the list.
+        public IEnumerable<int> BonusNumbers { get; set; }
 
-        public (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers) ParseLottoList(List<LottoData> lotto)
+        public (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers, IEnumerable<int> Bonus) ParseLottoList(List<LottoData> lotto)
         {
-            (IEnumerable<int[]>, IEnumerable<int>) results = (AllNumbers = lotto.Select(a => a.Numbers),
-                DistinctNumbers = lotto.SelectMany(a => a.Numbers).Distinct());
+            (IEnumerable<int[]>, IEnumerable<int>, IEnumerable<int>) results = (AllNumbers = lotto.Select(a => a.Numbers),
+                DistinctNumbers = lotto.SelectMany(a => a.Numbers).Distinct(),
+                BonusNumbers = lotto.Select(a => a.Bonus));
 
             return results;
         }

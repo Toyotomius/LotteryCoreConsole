@@ -15,7 +15,7 @@ namespace LotteryCoreConsole.Lottery_Calculation.PairsCode
             _pairsJsonSerial = pairsJsonSerial;
         }
 
-        public void FindPairsParallel(string lotteryName, (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers) parsedLotto)
+        public void FindPairsParallel(string lotteryName, (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers, IEnumerable<int> BonusNumbers) parsedLotto)
         {
             Console.WriteLine(
                 $"{DateTimeOffset.Parse(DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")).ToString("MM/dd/yyyy hh:mm:ss.fff tt")}" +

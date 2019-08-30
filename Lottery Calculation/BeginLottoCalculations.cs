@@ -10,16 +10,16 @@ namespace LotteryCoreConsole.Lottery_Calculation
     public class BeginLottoCalculations : IBeginLottoCalculations
     {
         private readonly INumberParsing _lottoNumberParser;
-
+        private readonly IParaBonus _paraBonus;
         private readonly IParaPairs _paraPairs;
         private readonly IParaSingles _paraSingles;
         private readonly IParaTriplets _paraTriplets;
 
         public BeginLottoCalculations(INumberParsing lottoNumberParser, IParaSingles paraSingles, IParaPairs paraPairs,
-            IParaTriplets paraTriplets)
+            IParaTriplets paraTriplets, IParaBonus paraBonus)
         {
             _lottoNumberParser = lottoNumberParser;
-
+            _paraBonus = paraBonus;
             _paraSingles = paraSingles;
             _paraPairs = paraPairs;
             _paraTriplets = paraTriplets;
@@ -31,12 +31,13 @@ namespace LotteryCoreConsole.Lottery_Calculation
             {
                 string resultsPath = $"./Lottery Results/{lotteryName}/";
                 if (!Directory.Exists(resultsPath)) Directory.CreateDirectory(resultsPath);
-                (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers) parsedLotto =
+                (IEnumerable<int[]> AllNumbers, IEnumerable<int> DistinctNumbers, IEnumerable<int> BonusNumbers) parsedLotto =
                     _lottoNumberParser.ParseLottoList(lotto);
 
                 _paraTriplets.FindTripsParallel(lotteryName, parsedLotto);
                 _paraPairs.FindPairsParallel(lotteryName, parsedLotto);
                 _paraSingles.FindSinglesParallel(lotteryName, parsedLotto);
+                _paraBonus.FindBonusParallel(lotteryName, parsedLotto);
             }
 
             Console.WriteLine(
