@@ -22,7 +22,7 @@ namespace LotteryCoreConsole
 
         internal static IBeginLottoCalculations CreateBeginLottoCalculations()
         {
-            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(), CreateParaPairs(), CreateParaTriplets());
+            return new BeginLottoCalculations(CreateNumberParser(), CreateParaSingles(), CreateParaPairs(), CreateParaTriplets(), CreateParaBonus());
         }
 
         internal static IGetSettings CreateGetSettings()
@@ -63,6 +63,20 @@ namespace LotteryCoreConsole
         private static ILottoPairsJsonSerial CreatePairsJsonSerial()
         {
             return new LottoPairsJsonSerial(CreateJsonSerializer(), CreatePairsFileOut());
+        }
+
+        private static IParaBonus CreateParaBonus()
+        {
+            return new ParaBonus(CreateBonusJSonSerial());
+        }
+        private static ILottoBonusFileOut CreateBonusFileOut()
+        {
+            return new LottoBonusFileOut(CreateFileOut());
+        }
+
+        private static ILottoBonusJsonSerial CreateBonusJSonSerial()
+        {
+            return new LottoBonusJsonSerial(CreateJsonSerializer(), CreateBonusFileOut());
         }
 
         private static IParaPairs CreateParaPairs()

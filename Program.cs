@@ -55,7 +55,7 @@ namespace LotteryCoreConsole
         }
     }
 }
-
+// The below are aimed for the addition of the web app.
 // TODO: Check to see if a file has been added to.Ignore it if it hasn't been.
 // TODO: Clean up logfile at various points.
 // TODO: Dependency Injection.
